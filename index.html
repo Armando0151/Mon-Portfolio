@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio d'Armand Koffi, étudiant en développement web passionné par la création de sites modernes, interactifs et intuitifs.">
+    <meta name="keywords" content="portfolio, étudiant en développement web, frontend, HTML, CSS, JavaScript, React, Vue, Angular">    
+    <meta name="author" content="Armand Koffi">
+
+    <!-- ICONES UNICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- FICHIER CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- FAVICON LOGO -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+    <title>Portfolio | Armando</title>
+  </head>
+
+  <body>
+    <div class="container">
+    <!-- EN-TETE -->
+    <nav id="header">
+      <div class="nav-logo">
+        <p class="nav-name">Portfolio</p>
+        <span>.</span>
+      </div>
+      <div class="nav-menu" id="myNavMenu">
+        <ul class="nav_menu_list">
+          <li class="nav_list">
+            <a href="#home" class="nav-link active-link">Accueil</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#about" class="nav-link">À propos</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#projects" class="nav-link">Projets</a>
+            <div class="circle"></div>
+          </li>
+          <li class="nav_list">
+            <a href="#contact" class="nav-link">Contact</a>
+            <div class="circle"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <button class="btn" onclick="window.open('assets/pdf/MON CV 2025.pdf')">Télécharger CV <i class="uil uil-file-alt"></i></button>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+      </div>
+    </nav>
+
+    <!-- CORPS -->
+    <main class="wrapper">
+      <!-- SECTION PRINCIPALE -->
+      <section class="featured-box" id="home">
+        <div class="featured-text">
+          <div class="featured-text-card">
+            <span>Armand Koffi</span>
+          </div>
+          <div class="featured-name">
+            <p>Je suis <span class="typedText"></span></p>
+          </div>
+          <div class="featured-text-info">
+            <p>
+              En tant qu'étudiant en développement d'application, je me perfectionne en HTML, CSS, JavaScript, 
+              ainsi qu'avec des frameworks et bibliothèques modernes. Ma curiosité me pousse également à maîtriser 
+              des CMS comme WordPress. Passionné par la technologie, je me tiens constamment informé 
+              des dernières innovations pour enrichir mes compétences et mener à bien des projets créatifs et fonctionnels.
+            </p>
+          </div>
+          <div class="featured-text-btn">
+            <button class="btn blue-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contactez-moi</button>
+            <button class="btn" onclick="window.open('assets/pdf/MON CV 2025.pdf')">Télécharger CV <i class="uil uil-file-alt"></i></button>
+          </div>
+          <div class="social_icons">
+            <div class="icon"><i class="uil uil-facebook-f"></i></div>
+            <div class="icon"><i class="uil uil-whatsapp"></i></div>
+            <div class="icon"><i class="uil uil-github"></i></div>
+            <div class="icon"><i class="uil uil-snapchat-ghost"></i></div>
+          </div>
+        </div>
+        <div class="featured-image">
+          <div class="image">
+            <img src="assets/images/avatar.png" alt="avatar">
+          </div>
+        </div>
+        <div class="scroll-icon-box">
+          <a href="#about" class="scroll-btn">
+            <i class="uil uil-mouse-alt"></i>
+            <p>Faites défiler</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- SECTION A PROPOS -->
+      <section class="section" id="about">
+        <div class="top-header">
+          <h1>À propos de moi</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="about-info">
+              <h3>Présentation</h3>
+              <p>
+                En tant qu'étudiant en développement d'application, je suis passionné par la conception de solutions
+                innovantes qui répondent aux besoins des utilisateurs. La création d'applications modernes, 
+                intuitives et esthétiques m'inspire profondément. Ma curiosité et ma soif d'apprentissage me poussent 
+                à explorer constamment de nouvelles technologies et à améliorer mes compétences. Chaque projet représente 
+                une opportunité unique d'innover et de surmonter des défis complexes,
+                me permettant ainsi de contribuer de manière significative au monde du développement d'applications.
+              </p>
+              <div class="about-btn">
+                <button class="btn" onclick="window.open('assets/pdf/MON CV 2025.pdf')">Télécharger CV <i class="uil uil-import"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="skills-box">
+              <div class="skills-header">
+                <h3>Frontend</h3>
+              </div>
+              <div class="skills-list">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>VueJs</span>
+                <span>ReactJs</span>
+                <span>TailwindCSS</span>
+              </div>
+            </div>
+            <div class="skills-box">
+              <div class="skills-header">
+                <h3>Backend</h3>
+              </div>
+              <div class="skills-list">
+                <span>PHP</span>
+                <span>JAVA</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+              </div>
+            </div>
+            <div class="skills-box">
+              <div class="skills-header">
+                <h3>Base de données</h3>
+              </div>
+              <div class="skills-list">
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION PROJET -->
+      <section class="section" id="projects">
+        <div class="top-header">
+          <h1>Projets</h1>
+        </div>
+        <div class="project-container">
+          <div class="project-box">
+            <i class="uil uil-briefcase-alt"></i>
+            <h3>Réalisés</h3>
+            <label>15+ Projets académiques et personnels</label>
+          </div>
+          <div class="project-box">
+            <i class="uil uil-users-alt"></i>
+            <h3>Collaborations</h3>
+            <label>Travail en équipe sur plusieurs projets</label>
+          </div>
+          <div class="project-box">
+            <i class="uil uil-award"></i>
+            <h3>Expérience</h3>
+            <label>En apprentissage constant</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION CONTACT -->
+      <section class="section" id="contact">
+        <div class="top-header">
+          <h1>Contactez-moi</h1>
+          <span>Une question, un projet ou juste envie d'échanger ? N'hésitez pas à me contacter !</span>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="contact-info">
+              <h2>Me contacter <i class="uil uil-corner-right-down"></i></h2>
+              <p><i class="uil uil-envelope"></i> Email : armandokoffikoffi@gmail.com</p>
+              <p><i class="uil uil-phone"></i> Tél : +225 07 59 68 39 40</p>
+              <p><i class="uil uil-phone"></i> Tél : +225 05 96 73 86 25</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-control">
+                <div class="form-inputs">
+                  <input type="text" class="input-field" placeholder="Nom">
+                  <input type="email" class="input-field" placeholder="Email">
+                </div>
+                <div class="text-area">
+                  <textarea placeholder="Message"></textarea>
+                </div>
+                <div class="form-button">
+                  <button class="btn">Envoyer <i class="uil uil-message"></i></button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+      <div class="top-footer">
+        <p>Armand Koffi .</p>
+      </div>
+      <div class="middle-footer">
+        <ul class="footer-menu">
+          <li class="footer_menu_list">
+            <a href="#home">Accueil</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#about">À propos</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#projects">Projets</a>
+          </li>
+          <li class="footer_menu_list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social-icons">
+        <div class="icon"><i class="uil uil-facebook-f"></i></div>
+        <div class="icon"><i class="uil uil-whatsapp"></i></div>
+        <div class="icon"><i class="uil uil-github"></i></div>
+        <div class="icon"><i class="uil uil-snapchat-ghost"></i></div>
+      </div>
+      <div class="bottom-footer">
+        <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Armand Koffi</a> - Tous droits réservés</p>
+      </div>
+    </footer>
+
+    </div>
+
+
+    <!-- TYPING JS LINK -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- SCROLL REVEAL JS LINK -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+
+  </body>
+
+</html>
