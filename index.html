@@ -1,269 +1,623 @@
 <!DOCTYPE html>
-
 <html lang="fr">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio d'Armand Koffi, étudiant en développement web passionné par la création de sites modernes, interactifs et intuitifs.">
-    <meta name="keywords" content="portfolio, étudiant en développement web, frontend, HTML, CSS, JavaScript, React, Vue, Angular">    
-    <meta name="author" content="Armand Koffi">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio d'Armand Koffi, développeur web full-stack passionné par la création de solutions digitales innovantes et performantes."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, développeur web, full-stack, HTML, CSS, JavaScript, React, Vue, Angular, PHP, Python"
+    />
+    <meta name="author" content="Armand Koffi" />
 
     <!-- ICONES UNICONS -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
 
-    <!-- FICHIER CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- FICHIERS CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/advanced-styles.css" />
 
     <!-- FAVICON LOGO -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.png"
+    />
 
-    <title>Portfolio | Armando</title>
+    <title>Armand Koffi | Développeur Web Full-Stack</title>
   </head>
 
   <body>
-    <div class="container">
-    <!-- EN-TETE -->
-    <nav id="header">
-      <div class="nav-logo">
-        <p class="nav-name">Portfolio</p>
-        <span>.</span>
-      </div>
-      <div class="nav-menu" id="myNavMenu">
-        <ul class="nav_menu_list">
-          <li class="nav_list">
-            <a href="#home" class="nav-link active-link">Accueil</a>
-            <div class="circle"></div>
-          </li>
-          <li class="nav_list">
-            <a href="#about" class="nav-link">À propos</a>
-            <div class="circle"></div>
-          </li>
-          <li class="nav_list">
-            <a href="#projects" class="nav-link">Projets</a>
-            <div class="circle"></div>
-          </li>
-          <li class="nav_list">
-            <a href="#contact" class="nav-link">Contact</a>
-            <div class="circle"></div>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-button">
-        <button class="btn" onclick="window.open('assets/pdf/MON CV 2025.pdf')">Télécharger CV <i class="uil uil-file-alt"></i></button>
-      </div>
-      <div class="nav-menu-btn">
-        <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-      </div>
-    </nav>
-
-    <!-- CORPS -->
-    <main class="wrapper">
-      <!-- SECTION PRINCIPALE -->
-      <section class="featured-box" id="home">
-        <div class="featured-text">
-          <div class="featured-text-card">
-            <span>Armand Koffi</span>
-          </div>
-          <div class="featured-name">
-            <p>Je suis <span class="typedText"></span></p>
-          </div>
-          <div class="featured-text-info">
-            <p>
-              En tant qu'étudiant en développement d'application, je me perfectionne en HTML, CSS, JavaScript, 
-              ainsi qu'avec des frameworks et bibliothèques modernes. Ma curiosité me pousse également à maîtriser 
-              des CMS comme WordPress. Passionné par la technologie, je me tiens constamment informé 
-              des dernières innovations pour enrichir mes compétences et mener à bien des projets créatifs et fonctionnels.
-            </p>
-          </div>
-          <div class="featured-text-btn">
-            <button class="btn blue-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contactez-moi</button>
-            <button class="btn" onclick="window.open('assets/pdf/MON CV 2025.pdf')">Télécharger CV <i class="uil uil-file-alt"></i></button>
-          </div>
-          <div class="social_icons">
-            <div class="icon"><i class="uil uil-facebook-f"></i></div>
-            <div class="icon"><i class="uil uil-whatsapp"></i></div>
-            <div class="icon"><i class="uil uil-github"></i></div>
-            <div class="icon"><i class="uil uil-snapchat-ghost"></i></div>
-          </div>
-        </div>
-        <div class="featured-image">
-          <div class="image">
-            <img src="assets/images/avatar.png" alt="avatar">
-          </div>
-        </div>
-        <div class="scroll-icon-box">
-          <a href="#about" class="scroll-btn">
-            <i class="uil uil-mouse-alt"></i>
-            <p>Faites défiler</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- SECTION A PROPOS -->
-      <section class="section" id="about">
-        <div class="top-header">
-          <h1>À propos de moi</h1>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="about-info">
-              <h3>Présentation</h3>
-              <p>
-                En tant qu'étudiant en développement d'application, je suis passionné par la conception de solutions
-                innovantes qui répondent aux besoins des utilisateurs. La création d'applications modernes, 
-                intuitives et esthétiques m'inspire profondément. Ma curiosité et ma soif d'apprentissage me poussent 
-                à explorer constamment de nouvelles technologies et à améliorer mes compétences. Chaque projet représente 
-                une opportunité unique d'innover et de surmonter des défis complexes,
-                me permettant ainsi de contribuer de manière significative au monde du développement d'applications.
-              </p>
-              <div class="about-btn">
-                <button class="btn" onclick="window.open('assets/pdf/MON CV 2025.pdf')">Télécharger CV <i class="uil uil-import"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="skills-box">
-              <div class="skills-header">
-                <h3>Frontend</h3>
-              </div>
-              <div class="skills-list">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Bootstrap</span>
-                <span>VueJs</span>
-                <span>ReactJs</span>
-                <span>TailwindCSS</span>
-              </div>
-            </div>
-            <div class="skills-box">
-              <div class="skills-header">
-                <h3>Backend</h3>
-              </div>
-              <div class="skills-list">
-                <span>PHP</span>
-                <span>JAVA</span>
-                <span>JavaScript</span>
-                <span>Python</span>
-              </div>
-            </div>
-            <div class="skills-box">
-              <div class="skills-header">
-                <h3>Base de données</h3>
-              </div>
-              <div class="skills-list">
-                <span>MySQL</span>
-                <span>PostgreSQL</span>
-                <span>MongoDB</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION PROJET -->
-      <section class="section" id="projects">
-        <div class="top-header">
-          <h1>Projets</h1>
-        </div>
-        <div class="project-container">
-          <div class="project-box">
-            <i class="uil uil-briefcase-alt"></i>
-            <h3>Réalisés</h3>
-            <label>15+ Projets académiques et personnels</label>
-          </div>
-          <div class="project-box">
-            <i class="uil uil-users-alt"></i>
-            <h3>Collaborations</h3>
-            <label>Travail en équipe sur plusieurs projets</label>
-          </div>
-          <div class="project-box">
-            <i class="uil uil-award"></i>
-            <h3>Expérience</h3>
-            <label>En apprentissage constant</label>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION CONTACT -->
-      <section class="section" id="contact">
-        <div class="top-header">
-          <h1>Contactez-moi</h1>
-          <span>Une question, un projet ou juste envie d'échanger ? N'hésitez pas à me contacter !</span>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="contact-info">
-              <h2>Me contacter <i class="uil uil-corner-right-down"></i></h2>
-              <p><i class="uil uil-envelope"></i> Email : armandokoffikoffi@gmail.com</p>
-              <p><i class="uil uil-phone"></i> Tél : +225 07 59 68 39 40</p>
-              <p><i class="uil uil-phone"></i> Tél : +225 05 96 73 86 25</p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-control">
-                <div class="form-inputs">
-                  <input type="text" class="input-field" placeholder="Nom">
-                  <input type="email" class="input-field" placeholder="Email">
-                </div>
-                <div class="text-area">
-                  <textarea placeholder="Message"></textarea>
-                </div>
-                <div class="form-button">
-                  <button class="btn">Envoyer <i class="uil uil-message"></i></button>
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- PIED DE PAGE -->
-    <footer>
-      <div class="top-footer">
-        <p>Armand Koffi .</p>
-      </div>
-      <div class="middle-footer">
-        <ul class="footer-menu">
-          <li class="footer_menu_list">
-            <a href="#home">Accueil</a>
-          </li>
-          <li class="footer_menu_list">
-            <a href="#about">À propos</a>
-          </li>
-          <li class="footer_menu_list">
-            <a href="#projects">Projets</a>
-          </li>
-          <li class="footer_menu_list">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-social-icons">
-        <div class="icon"><i class="uil uil-facebook-f"></i></div>
-        <div class="icon"><i class="uil uil-whatsapp"></i></div>
-        <div class="icon"><i class="uil uil-github"></i></div>
-        <div class="icon"><i class="uil uil-snapchat-ghost"></i></div>
-      </div>
-      <div class="bottom-footer">
-        <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Armand Koffi</a> - Tous droits réservés</p>
-      </div>
-    </footer>
-
+    <!-- Background animé -->
+    <div class="animated-bg">
+      <div class="bg-element"></div>
+      <div class="bg-element"></div>
+      <div class="bg-element"></div>
+      <div class="bg-element"></div>
+      <div class="bg-element"></div>
+      <div class="bg-element bg-anim-rotate"></div>
+      <div class="bg-element bg-anim-scale"></div>
+      <div class="bg-element bg-anim-fade"></div>
+      <div class="bg-element bg-anim-move"></div>
     </div>
 
+    <div class="container">
+      <!-- NAVIGATION DYNAMIQUE -->
+      <nav id="navbar" class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <span class="logo-text">Armand</span>
+            <span class="logo-dot">.</span>
+          </div>
 
-    <!-- TYPING JS LINK -->
+          <div class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+              <li><a href="#home" class="nav-link active">Accueil</a></li>
+              <li><a href="#about" class="nav-link">À propos</a></li>
+              <li><a href="#projects" class="nav-link">Projets</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle">
+              <i class="uil uil-moon"></i>
+            </button>
+            <button
+              class="cv-btn"
+              onclick="window.open('assets/pdf/MON CV 2025.pdf')"
+            >
+              <i class="uil uil-download-alt"></i>
+              <span>CV</span>
+            </button>
+            <button class="nav-toggle" id="navToggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- CONTENU PRINCIPAL -->
+      <main class="main-content">
+        <!-- SECTION HERO -->
+        <section class="hero-section" id="home">
+          <div class="hero-container">
+            <div class="hero-content">
+              <div class="hero-badge glass-effect">
+                <span>👋 Salut, je suis</span>
+              </div>
+              <h1 class="hero-title">
+                <span class="title-name">Armand Koffi</span>
+                <span class="title-role">
+                  <span class="typed-text"></span>
+                  <span class="cursor">|</span>
+                </span>
+              </h1>
+              <p class="hero-description">
+                Développeur web full-stack passionné par la création de
+                solutions digitales innovantes et performantes. J'allie
+                créativité et expertise technique pour donner vie à vos projets
+                les plus ambitieux.
+              </p>
+              <div class="hero-actions">
+                <button
+                  class="btn-primary"
+                  onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+                >
+                  <span>Démarrons un projet</span>
+                  <i class="uil uil-arrow-right"></i>
+                </button>
+                <button
+                  class="btn-secondary"
+                  onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})"
+                >
+                  <span>Voir mes réalisations</span>
+                </button>
+              </div>
+              <div class="social-links">
+                <a href="#" class="social-link glass-effect">
+                  <i class="uil uil-github"></i>
+                </a>
+                <a href="#" class="social-link glass-effect">
+                  <i class="uil uil-linkedin"></i>
+                </a>
+                <a href="#" class="social-link glass-effect">
+                  <i class="uil uil-whatsapp"></i>
+                </a>
+                <a href="#" class="social-link glass-effect">
+                  <i class="uil uil-envelope"></i>
+                </a>
+              </div>
+            </div>
+            <div class="hero-image">
+              <div class="image-container glass-effect">
+                <img
+                  src="assets/images/avatar.png"
+                  alt="Armand Koffi - Développeur Web"
+                  class="static-image"
+                />
+                <div class="rotating-border"></div>
+                <div class="image-overlay glass-effect"></div>
+              </div>
+              <div class="floating-elements">
+                <div class="float-element">💻</div>
+                <div class="float-element">🚀</div>
+                <div class="float-element">⚡</div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Explorez mon univers</span>
+          </div>
+        </section>
+
+        <!-- SECTION À PROPOS -->
+        <section class="about-section section" id="about">
+          <div class="section-container">
+            <div class="section-header">
+              <span class="section-tag">Qui suis-je ?</span>
+              <h2 class="section-title">À propos de moi</h2>
+              <p class="section-subtitle">
+                Découvrez mon parcours, mes passions et ma vision du
+                développement web
+              </p>
+            </div>
+
+            <div class="about-content">
+              <div class="about-text">
+                <div class="text-card">
+                  <h3>Mon parcours</h3>
+                  <p>
+                    Étudiant en développement d'applications, je me spécialise
+                    dans la création de solutions web modernes et performantes.
+                    Ma passion pour la technologie m'anime depuis mes débuts, et
+                    chaque jour apporte son lot de nouveaux défis et
+                    d'apprentissages.
+                  </p>
+                  <p>
+                    Je crois fermement que le code est un art autant qu'une
+                    science. C'est pourquoi j'accorde une attention particulière
+                    à l'esthétique, à l'expérience utilisateur et aux
+                    performances de chaque projet que je développe.
+                  </p>
+                  <div class="stats-grid">
+                    <div class="stat-item">
+                      <span class="stat-number">15+</span>
+                      <span class="stat-label">Projets réalisés</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-number">2+</span>
+                      <span class="stat-label">Années d'expérience</span>
+                    </div>
+                    <div class="stat-item">
+                      <span class="stat-number">5+</span>
+                      <span class="stat-label">Technologies maîtrisées</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-section">
+                <div class="skills-category">
+                  <h4>Frontend Development</h4>
+                  <div class="skills-list">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript ES6+</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Vue.js</span>
+                    <span class="skill-tag">TailwindCSS</span>
+                    <span class="skill-tag">Bootstrap</span>
+                  </div>
+                </div>
+
+                <div class="skills-category">
+                  <h4>Backend Development</h4>
+                  <div class="skills-list">
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Java</span>
+                  </div>
+                </div>
+
+                <div class="skills-category">
+                  <h4>Bases de données & Outils</h4>
+                  <div class="skills-list">
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION PROJETS -->
+        <section class="projects-section section" id="projects">
+          <div class="section-container">
+            <div class="section-header">
+              <span class="section-tag">Mon travail</span>
+              <h2 class="section-title">Projets réalisés</h2>
+              <p class="section-subtitle">
+                Découvrez une sélection de mes réalisations les plus
+                significatives
+              </p>
+            </div>
+
+            <div class="projects-grid">
+              <div class="project-card featured">
+                <div class="project-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+                    alt="E-commerce Platform"
+                  />
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link">
+                        <i class="uil uil-eye"></i>
+                      </a>
+                      <a href="#" class="project-link">
+                        <i class="uil uil-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <span class="project-category">E-commerce</span>
+                  <h3 class="project-title">Plateforme E-commerce</h3>
+                  <p class="project-description">
+                    Plateforme de vente en ligne complète avec système de
+                    paiement intégré, gestion des stocks et interface
+                    d'administration avancée.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Stripe</span>
+                  </div>
+                  <a href="project-detail-ecommerce.html" class="project-btn">
+                    <span>Voir le projet</span>
+                    <i class="uil uil-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop"
+                    alt="Dashboard Analytics"
+                  />
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link">
+                        <i class="uil uil-eye"></i>
+                      </a>
+                      <a href="#" class="project-link">
+                        <i class="uil uil-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <span class="project-category">Dashboard</span>
+                  <h3 class="project-title">Dashboard Analytics</h3>
+                  <p class="project-description">
+                    Interface d'analyse de données interactive avec graphiques
+                    dynamiques et tableaux de bord personnalisables.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">Chart.js</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">MySQL</span>
+                  </div>
+                  <a href="#" class="project-btn">
+                    <span>Voir le projet</span>
+                    <i class="uil uil-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=600&fit=crop"
+                    alt="App Mobile"
+                  />
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link">
+                        <i class="uil uil-eye"></i>
+                      </a>
+                      <a href="#" class="project-link">
+                        <i class="uil uil-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <span class="project-category">Mobile</span>
+                  <h3 class="project-title">Application Mobile</h3>
+                  <p class="project-description">
+                    Application mobile cross-platform pour la gestion de tâches
+                    avec synchronisation cloud et notifications push.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">TypeScript</span>
+                  </div>
+                  <a href="#" class="project-btn">
+                    <span>Voir le projet</span>
+                    <i class="uil uil-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&h=600&fit=crop"
+                    alt="Blog Platform"
+                  />
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link">
+                        <i class="uil uil-eye"></i>
+                      </a>
+                      <a href="#" class="project-link">
+                        <i class="uil uil-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <span class="project-category">CMS</span>
+                  <h3 class="project-title">Plateforme de Blog</h3>
+                  <p class="project-description">
+                    CMS personnalisé avec éditeur WYSIWYG, système de
+                    commentaires et optimisation SEO avancée.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">Strapi</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                  </div>
+                  <a href="#" class="project-btn">
+                    <span>Voir le projet</span>
+                    <i class="uil uil-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&h=600&fit=crop"
+                    alt="API REST"
+                  />
+                  <div class="project-overlay">
+                    <div class="project-links">
+                      <a href="#" class="project-link">
+                        <i class="uil uil-eye"></i>
+                      </a>
+                      <a href="#" class="project-link">
+                        <i class="uil uil-external-link-alt"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <span class="project-category">Backend</span>
+                  <h3 class="project-title">API REST Scalable</h3>
+                  <p class="project-description">
+                    API REST robuste et scalable avec authentification JWT,
+                    cache Redis et documentation interactive Swagger.
+                  </p>
+                  <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">Docker</span>
+                  </div>
+                  <a href="#" class="project-btn">
+                    <span>Voir le projet</span>
+                    <i class="uil uil-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION CONTACT -->
+        <section class="contact-section section" id="contact">
+          <div class="section-container">
+            <div class="section-header">
+              <span class="section-tag">Travaillons ensemble</span>
+              <h2 class="section-title">Contactez-moi</h2>
+              <p class="section-subtitle">
+                Prêt à donner vie à votre projet ? Discutons de vos idées !
+              </p>
+            </div>
+
+            <div class="contact-content">
+              <div class="contact-info">
+                <div class="info-card">
+                  <div class="info-icon">
+                    <i class="uil uil-envelope"></i>
+                  </div>
+                  <div class="info-content">
+                    <h4>Email</h4>
+                    <p>armandokoffikoffi@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="info-card">
+                  <div class="info-icon">
+                    <i class="uil uil-phone"></i>
+                  </div>
+                  <div class="info-content">
+                    <h4>Téléphone</h4>
+                    <p>+225 07 59 68 39 40</p>
+                  </div>
+                </div>
+
+                <div class="info-card">
+                  <div class="info-icon">
+                    <i class="uil uil-whatsapp"></i>
+                  </div>
+                  <div class="info-content">
+                    <h4>WhatsApp</h4>
+                    <p>+225 05 96 73 86 25</p>
+                  </div>
+                </div>
+
+                <div class="availability-card">
+                  <div class="status-indicator"></div>
+                  <div class="availability-text">
+                    <span class="status"
+                      >Disponible pour de nouveaux projets</span
+                    >
+                    <span class="response-time">Réponse sous 24h</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form">
+                <form class="form">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-input"
+                        placeholder=" "
+                        title="Nom complet"
+                        required
+                      />
+                      <label class="form-label">Nom complet</label>
+                    </div>
+                    <div class="input-group">
+                      <input
+                        type="email"
+                        class="form-input"
+                        placeholder=" "
+                        title="Adresse email"
+                        required
+                      />
+                      <label class="form-label">Adresse email</label>
+                    </div>
+                  </div>
+
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder=" "
+                      title="Sujet du message"
+                      required
+                    />
+                    <label class="form-label">Sujet du message</label>
+                  </div>
+
+                  <div class="input-group">
+                    <textarea
+                      class="form-input form-textarea"
+                      placeholder="Votre message"
+                      title="Votre message"
+                      required
+                    ></textarea>
+                    <label class="form-label">Votre message</label>
+                  </div>
+
+                  <button type="submit" class="submit-btn">
+                    <span>Envoyer le message</span>
+                    <i class="uil uil-message"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Boutons de scroll -->
+      <button
+        id="scrollToTop"
+        class="scroll-btn scroll-to-top"
+        title="Remonter"
+      >
+        <i class="uil uil-arrow-up"></i>
+      </button>
+      <button
+        id="scrollToBottom"
+        class="scroll-btn scroll-to-bottom"
+        title="Descendre"
+      >
+        <i class="uil uil-arrow-down"></i>
+      </button>
+      <button class="scroll-indicator-btn scroll-btn" title="Explorer le bas">
+        <i class="uil uil-angle-double-down"></i>
+      </button>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-main">
+            <div class="footer-brand">
+              <h3>Armand Koffi</h3>
+              <p>Développeur Web Full-Stack</p>
+            </div>
+
+            <div class="footer-links">
+              <a href="#home">Accueil</a>
+              <a href="#about">À propos</a>
+              <a href="#projects">Projets</a>
+              <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-social">
+              <a href="#" class="social-link">
+                <i class="uil uil-github"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="uil uil-linkedin"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="uil uil-whatsapp"></i>
+              </a>
+              <a href="#" class="social-link">
+                <i class="uil uil-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; 2025 Armand Koffi. Tous droits réservés.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- SCRIPTS -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <!-- SCROLL REVEAL JS LINK -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- MAIN JS -->
-    <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/advanced-scripts.js"></script>
   </body>
-
 </html>
