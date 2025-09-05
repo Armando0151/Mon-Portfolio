@@ -1400,8 +1400,7 @@ body {
 .nav-toggle,
 .theme-toggle,
 .project-link,
-.social-link,
-.scroll-btn {
+.social-link {
   transition: all 0.22s cubic-bezier(0.4, 2, 0.6, 1),
     box-shadow 0.22s cubic-bezier(0.4, 2, 0.6, 1);
 }
@@ -1412,8 +1411,7 @@ body {
 .nav-toggle:hover,
 .theme-toggle:hover,
 .project-link:hover,
-.social-link:hover,
-.scroll-btn:hover {
+.social-link:hover {
   transform: scale(1.08) translateY(-2px);
   box-shadow: 0 4px 16px var(--primary-color), 0 0 0 4px rgba(99, 102, 241, 0.1);
   filter: brightness(1.08);
