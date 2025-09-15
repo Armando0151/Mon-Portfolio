@@ -157,7 +157,6 @@ class NavigationManager {
       const scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
       navbar?.classList.toggle("scrolled", scrollTop > 100);
-      this.updateActiveLink();
       ticking = false;
     };
 
@@ -307,12 +306,44 @@ class TypingAnimation {
 class ScrollAnimations {
   constructor() {
     this.observer = null;
+    this.lastScrollTop = 0;
     this.init();
   }
 
   init() {
     this.createObserver();
     this.observeElements();
+    this.handleScroll = this.handleScroll.bind(this);
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    const st = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollingDown = st > this.lastScrollTop;
+    this.lastScrollTop = st <= 0 ? 0 : st;
+    this.updateElementsVisibility(scrollingDown);
+  }
+
+  updateElementsVisibility(scrollingDown) {
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    const windowHeight = window.innerHeight;
+    const buffer = 100; // Zone tampon pour déclencher l'animation
+
+    elements.forEach(element => {
+      const rect = element.getBoundingClientRect();
+      const elementCenter = rect.top + rect.height / 2;
+      const isInView = elementCenter > buffer && elementCenter < windowHeight - buffer;
+
+      if (isInView) {
+        element.classList.add('fade-in');
+        element.classList.remove('fade-out');
+      } else {
+        if ((scrollingDown && rect.top > windowHeight) || (!scrollingDown && rect.bottom < 0)) {
+          element.classList.add('fade-out');
+          element.classList.remove('fade-in');
+        }
+      }
+    });
   }
 
   createObserver() {
@@ -324,8 +355,12 @@ class ScrollAnimations {
     this.observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.style.animationPlayState = "running";
-          entry.target.classList.add("animate");
+          entry.target.classList.add('animate-on-scroll');
+          const st = window.pageYOffset || document.documentElement.scrollTop;
+          const scrollingDown = st > this.lastScrollTop;
+          if (scrollingDown) {
+            entry.target.classList.add('fade-in');
+          }
         }
       });
     }, options);
@@ -333,33 +368,20 @@ class ScrollAnimations {
 
   observeElements() {
     const animateElements = document.querySelectorAll(`
-            .section-header,
-            .text-card,
-            .skills-category,
-            .project-card,
-            .info-card,
-            .contact-form
-        `);
+      .section-header,
+      .text-card,
+      .skills-category,
+      .project-card,
+      .info-card,
+      .contact-form
+    `);
 
     animateElements.forEach((element, index) => {
       element.style.opacity = "0";
-      element.style.transform = "translateY(30px)";
       element.style.transition = "all 0.6s ease";
-      element.style.animationDelay = `${index * 0.1}s`;
-      element.style.animationPlayState = "paused";
-
+      element.style.transitionDelay = `${index * 0.1}s`;
       this.observer.observe(element);
     });
-
-    // Add CSS for animate class
-    const style = document.createElement("style");
-    style.textContent = `
-            .animate {
-                opacity: 1 !important;
-                transform: translateY(0) !important;
-            }
-        `;
-    document.head.appendChild(style);
   }
 }
 
@@ -726,10 +748,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const typedTextElement = document.querySelector(".typed-text");
   if (typedTextElement) {
     new TypingAnimation(typedTextElement, [
-      "Développeur Full-Stack",
-      "Créateur d'expériences web",
-      "Passionné de technologie",
-      "Architecte de solutions digitales",
+      "Full-Stack orienté impact",
+      "Code propre, résultats rapides",
+      "Créateur de solutions évolutives",
+      "Allié technique des entreprises"
     ]);
   }
   new ScrollAnimations();
