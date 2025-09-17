@@ -748,10 +748,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const typedTextElement = document.querySelector(".typed-text");
   if (typedTextElement) {
     new TypingAnimation(typedTextElement, [
-      "Full-Stack orienté impact",
-      "Code propre, résultats rapides",
-      "Créateur de solutions évolutives",
-      "Allié technique des entreprises"
+      "Développeur d’applications modernes",
+      "Solutions rapides, fiables et durables",
+      "Interfaces performantes et intuitives",
+      "Partenaire tech orienté résultats",
     ]);
   }
   new ScrollAnimations();
