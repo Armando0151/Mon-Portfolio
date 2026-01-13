@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduConnect - Armand Koffi</title>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/advanced-styles.css" />
+</head>
+
+<body>
+    <!-- Background animé (Canvas injecté par particles.js) -->
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Armando</span>
+                <span class="logo-dot">.</span>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="../index.html#home" class="nav-link">Accueil</a></li>
+                    <li><a href="../index.html#about" class="nav-link">À propos</a></li>
+                    <li><a href="../index.html#projects" class="nav-link active">Projets</a></li>
+                    <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <i class="uil uil-times nav-close" id="navClose"
+                    style="position: absolute; top: 1rem; right: 1.5rem; font-size: 1.5rem; cursor: pointer; display: none;"></i>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="uil uil-moon"></i>
+                </button>
+                <button class="cv-btn" onclick="window.open('../assets/pdf/MON CV 2025.pdf')">
+                    <i class="uil uil-download-alt"></i>
+                    <span>CV</span>
+                </button>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="main-content">
+
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div style="margin-bottom: 2rem; animation: slideInLeft 0.8s ease 0.1s both;">
+                        <a href="../index.html#projects" class="btn-secondary"
+                            style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">
+                            <i class="uil uil-arrow-left"></i> Retour
+                        </a>
+                    </div>
+
+                    <div class="hero-badge glass-effect">
+                        <span>EdTech / E-Learning</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-name">EduConnect</span>
+                    </h1>
+                    <p class="hero-description">
+                        Un système de gestion de l'apprentissage (LMS) moderne, conçu pour offrir
+                        une expérience éducative fluide et interactive aux étudiants et formateurs.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://educonnect-pied.vercel.app/" class="btn-primary" target="_blank">
+                            Voir le Site <i class="uil uil-external-link-alt" style="margin-left:5px;"></i>
+                        </a>
+                        <a href="#" class="btn-secondary" target="_blank">
+                            Frontend <i class="uil uil-github" style="margin-left:5px;"></i>
+                        </a>
+                        <a href="#" class="btn-secondary" target="_blank">
+                            Backend <i class="uil uil-github" style="margin-left:5px;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image" style="animation: fadeInRight 1s ease;">
+                    <div class="project-card"
+                        style="width: 100%; max-width: 500px; margin: 0 auto; transform: none; box-shadow: var(--glass-shadow);">
+                        <div class="project-image" style="height: 300px;">
+                            <img src="../assets/images/EduConnect.png" alt="EduConnect Preview"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DETAILS SECTION -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Détails techniques</span>
+                    <h2 class="section-title">Au cœur du projet</h2>
+                    <p class="section-subtitle">
+                        Une architecture pensée pour le partage de connaissances à grande échelle.
+                    </p>
+                </div>
+
+                <div class="about-content">
+
+                    <!-- LEFT COLUMN -->
+                    <div class="about-description">
+                        <div class="text-card mb-4" style="margin-bottom: 2rem;">
+                            <h3>Vue d'ensemble</h3>
+                            <p>
+                                EduConnect permet aux formateurs de structurer leurs cours par modules et chapitres,
+                                tout en offrant aux étudiants un tableau de bord intuitif pour suivre leur progression.
+                                L'accent a été mis sur la fluidité de navigation et la rapidité d'accès aux ressources.
+                            </p>
+                        </div>
+
+                        <div class="text-card">
+                            <h3>Challenges & Solutions</h3>
+
+                            <h4 style="margin-top:1.5rem; margin-bottom:0.5rem; color:var(--text-primary);"><i
+                                    class="uil uil-books" style="color:var(--primary-color); margin-right:0.5rem;"></i>
+                                Gestion Hiérarchique</h4>
+                            <p>
+                                Modélisation complexe de la base de données <strong>MongoDB</strong> pour gérer les
+                                relations
+                                entre cours, catégories, modules et sessions d'examens.
+                            </p>
+
+                            <h4 style="margin-top:1.5rem; margin-bottom:0.5rem; color:var(--text-primary);"><i
+                                    class="uil uil-chart-line"
+                                    style="color:var(--primary-color); margin-right:0.5rem;"></i>
+                                Suivi de Progression</h4>
+                            <p>
+                                Implémentation d'un système de "tracking" granulaire permettant aux étudiants de
+                                reprendre leur cours
+                                exactement là où ils s'étaient arrêtés.
+                            </p>
+
+                            <h4 style="margin-top:1.5rem; margin-bottom:0.5rem; color:var(--text-primary);"><i
+                                    class="uil uil-focus-target"
+                                    style="color:var(--primary-color); margin-right:0.5rem;"></i> Performance Frontend
+                            </h4>
+                            <p>
+                                Utilisation de la <strong>Context API</strong> et de hooks personnalisés en
+                                <strong>React</strong>
+                                pour gérer l'état global et éviter les re-rendus inutiles sur les interfaces riches en
+                                contenu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="skills-section">
+                        <!-- TECH STACK -->
+                        <div class="skills-category">
+                            <h4>Stack Technique</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag"><i class="devicon-react-original"></i> React</span>
+                                <span class="skill-tag"><i class="devicon-nodejs-plain"></i> Node.js</span>
+                                <span class="skill-tag"><i class="devicon-express-original"></i> Express</span>
+                                <span class="skill-tag"><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                                <span class="skill-tag"><i class="devicon-tailwindcss-plain"></i> Tailwind CSS</span>
+                            </div>
+                        </div>
+
+                        <!-- FEATURES -->
+                        <div class="text-card" style="margin-top: 2rem;">
+                            <h3>Fonctionnalités Clés</h3>
+                            <ul
+                                style="list-style-type: disc; padding-left: 1.5rem; color: var(--text-secondary); line-height: 1.8;">
+                                <li>Gestion de catalogues de cours</li>
+                                <li>Suivi de progression par étudiant</li>
+                                <li>Tableau de bord instructeur</li>
+                                <li>Système de quiz et validation</li>
+                                <li>Optimisation mobile-first</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT CTA -->
+        <section class="section" style="padding-top:0;">
+            <div class="container" style="text-align:center;">
+                <div class="glass-effect" style="padding: 3rem; border-radius: 20px; max-width: 800px; margin: 0 auto;">
+                    <h2 class="section-title" style="margin-bottom: 1rem;">Besoin d'un expert EdTech ?</h2>
+                    <p class="section-subtitle" style="margin-bottom: 2rem;">
+                        Je peux vous aider à digitaliser vos formations avec une plateforme sur mesure.
+                    </p>
+                    <a href="../index.html#contact" class="btn-primary" style="display: inline-flex;">
+                        Me Contacter <i class="uil uil-message" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h3>Armand Koffi</h3>
+                    <p>Développeur Fullstack JavaScript</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="../index.html#home">Accueil</a>
+                    <a href="../index.html#about">À propos</a>
+                    <a href="../index.html#projects">Projets</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://github.com/ArmandoKoffi" class="social-link glass-effect" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/armando-koffi-koffi/" class="social-link glass-effect"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://wa.me/2250151178319" class="social-link glass-effect" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="uil uil-whatsapp"></i>
+                    </a>
+                    <a href="mailto:armandkoffikoffi9@gmail.com" class="social-link glass-effect">
+                        <i class="uil uil-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Armand Koffi. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Motion One & Particles -->
+    <script type="module" src="../assets/js/cinematic-titles.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

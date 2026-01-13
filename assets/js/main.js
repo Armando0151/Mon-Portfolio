@@ -174,11 +174,14 @@ class NavigationManager {
     }
     navLinks.forEach((link) => {
       link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const target = document.querySelector(link.getAttribute("href"));
-        if (target) {
-          this.smoothScrollTo(target.offsetTop - 100);
-          this.closeMenu();
+        const href = link.getAttribute("href");
+        if (href && href.startsWith("#")) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            this.smoothScrollTo(target.offsetTop - 100);
+            this.closeMenu();
+          }
         }
       });
     });
@@ -558,9 +561,8 @@ class FormHandler {
     const notification = document.createElement("div");
     notification.className = `notification notification--${type}`;
     notification.innerHTML = `
-            <i class="uil uil-${
-              type === "success" ? "check-circle" : "exclamation-triangle"
-            }"></i>
+            <i class="uil uil-${type === "success" ? "check-circle" : "exclamation-triangle"
+      }"></i>
             <span>${message}</span>
         `;
 
@@ -748,20 +750,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const typedTextElement = document.querySelector(".typed-text");
   if (typedTextElement) {
     new TypingAnimation(typedTextElement, [
-      "Développeur d’applications modernes",
-      "Solutions rapides, fiables et durables",
-      "Interfaces performantes et intuitives",
-      "Partenaire tech orienté résultats",
+      "Développeur Fullstack JavaScript",
+      "Spécialisé React & TypeScript",
+      "Développeur Backend Node.js",
     ]);
   }
-  new ScrollAnimations();
+  // new ScrollAnimations(); // Replaced by animations.js
   new FormHandler(".form");
   new PerformanceOptimizer();
+  /* Replaced by global particles.js
   const heroSection = document.querySelector(".hero-section");
   if (heroSection && window.innerWidth > 1024) {
     new ParticleSystem(heroSection);
   }
+  */
 
+  /* Legacy Scroll Observer - Replaced by Motion One
   // Appliquer les classes d'animation aux éléments
   document
     .querySelectorAll(
@@ -796,6 +800,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".fade-scroll").forEach((el) => {
     observer.observe(el);
   });
+  */
 });
 
 // ===== UTILITY FUNCTIONS =====
@@ -839,7 +844,7 @@ const utils = {
       rect.top >= 0 &&
       rect.left >= 0 &&
       rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
+      (window.innerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   },

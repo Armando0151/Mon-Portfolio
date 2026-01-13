@@ -1,588 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio d'Armand Koffi, développeur web full-stack passionné par la création de solutions digitales innovantes et performantes."/>
-    <meta
-      name="keywords"
-      content="portfolio, développeur web, full-stack, HTML, CSS, JavaScript, React, Vue, Angular, PHP, Python"
-    />
-    <meta name="author" content="Armand Koffi" />
 
-    <!-- ICONES UNICONS -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio d'Armand Koffi, Développeur Fullstack JavaScript expert en React, Node.js et MongoDB. Disponible pour projets en télétravail." />
+  <meta name="keywords"
+    content="développeur fullstack, javascript, react, node.js, mongodb, typescript, freelance, télétravail" />
+  <meta name="author" content="Armand Koffi" />
 
-    <!-- FICHIERS CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/advanced-styles.css" />
+  <!-- ICONES UNICONS -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 
-    <!-- FAVICON LOGO -->
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/images/favicon.png"
-    />
+  <!-- FICHIERS CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/advanced-styles.css" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <!-- FAVICON LOGO -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
 
-    <title>Armand Koffi | Développeur Web Full-Stack</title>
-  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-  <body>
-    <!-- Background animé -->
-    <div class="animated-bg">
-      <div class="bg-element"></div>
-      <div class="bg-element"></div>
-      <div class="bg-element"></div>
-      <div class="bg-element"></div>
-      <div class="bg-element"></div>
-      <div class="bg-element bg-anim-rotate"></div>
-      <div class="bg-element bg-anim-scale"></div>
-      <div class="bg-element bg-anim-fade"></div>
-      <div class="bg-element bg-anim-move"></div>
-    </div>
+  <title>Armand Koffi | Développeur Fullstack JavaScript</title>
+</head>
 
-    <div class="container">
-      <!-- NAVIGATION DYNAMIQUE -->
-      <nav id="navbar" class="navbar">
-        <div class="nav-container">
-          <div class="nav-logo">
-            <span class="logo-text">Armando</span>
-            <span class="logo-dot">.</span>
-          </div>
+<body>
+  <!-- Background animé -->
+  <!-- Background animé (Canvas injecté par particles.js) -->
 
-          <div class="nav-menu" id="navMenu">
-            <ul class="nav-list">
-              <li><a href="#home" class="nav-link active">Accueil</a></li>
-              <li><a href="#about" class="nav-link">À propos</a></li>
-              <li><a href="#projects" class="nav-link">Projets</a></li>
-              <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="nav-actions">
-            <button class="theme-toggle" id="themeToggle">
-              <i class="uil uil-moon"></i>
-            </button>
-            <button
-              class="cv-btn"
-              onclick="window.open('assets/pdf/MON CV 2025.pdf')"
-            >
-              <i class="uil uil-download-alt"></i>
-              <span>CV</span>
-            </button>
-            <button class="nav-toggle" id="navToggle">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-          </div>
+  <div class="container">
+    <!-- NAVIGATION DYNAMIQUE -->
+    <nav id="navbar" class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text">Armando</span>
+          <span class="logo-dot">.</span>
         </div>
-      </nav>
 
-      <!-- CONTENU PRINCIPAL -->
-      <main class="main-content">
-        <!-- SECTION HERO -->
-        <section class="hero-section" id="home">
-          <div class="hero-container">
-            <div class="hero-content">
-              <div class="hero-badge glass-effect">
-                <span>👋 Salut, je suis</span>
-              </div>
-              <h1 class="hero-title">
-                <span class="title-name">Armand Koffi</span>
-                <span class="title-role">
-                  <span class="typed-text"></span>
-                  <span class="cursor">|</span>
-                </span>
-              </h1>
-              <p class="hero-description">
-                Développeur web & mobile, j’accompagne les entreprises dans la création de solutions digitales robustes
-                et centrées utilisateur. Je livre rapidement des produits de qualité,
-                avec un code maintenable et une expérience fluide qui répondent aux besoins réels du marché.
-              </p>
-              <div class="hero-actions">
-                <button
-                  class="btn-primary"
-                  onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
-                >
-                  <span>Lancez votre prochain projet avec moi</span>
-                  <i class="uil uil-arrow-right"></i>
-                </button>
-                <button
-                  class="btn-secondary"
-                  onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})"
-                >
-                  <span>Découvrir mes projets concrets</span>
-                </button>
-              </div>
-              <div class="social-links">
-                <a href="https://github.com/ArmandoKoffi" class="social-link glass-effect" target="_blank" rel="noopener noreferrer">
-                  <i class="uil uil-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/armando-koffi-koffi/" class="social-link glass-effect" target="_blank" rel="noopener noreferrer">
-                  <i class="uil uil-linkedin"></i>
-                </a>
-                <a href="https://wa.me/2250151178319" class="social-link glass-effect" target="_blank" rel="noopener noreferrer">
-                  <i class="uil uil-whatsapp"></i>
-                </a>
-                <a href="#contact" class="social-link glass-effect">
-                  <i class="uil uil-envelope"></i>
-                </a>
-              </div>
+        <div class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link active">Accueil</a></li>
+            <li><a href="#about" class="nav-link">À propos</a></li>
+            <li><a href="#projects" class="nav-link">Projets</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle">
+            <i class="uil uil-moon"></i>
+          </button>
+          <button class="cv-btn" onclick="window.open('assets/pdf/MON CV 2025.pdf')">
+            <i class="uil uil-download-alt"></i>
+            <span>CV</span>
+          </button>
+          <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="main-content">
+      <!-- SECTION HERO -->
+      <section class="hero-section" id="home">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-badge glass-effect">
+              <span>Salut, je suis</span>
             </div>
-            <div class="hero-image">
-              <div class="image-container glass-effect">
-                <img
-                  src="assets/images/avatar.jpg"
-                  alt="Armand Koffi - Développeur Web"
-                  class="static-image"
-                />
-                <div class="rotating-border"></div>
-                <div class="image-overlay glass-effect"></div>
-              </div>
-              <div class="floating-elements">
-                <div class="float-element">💻</div>
-                <div class="float-element">🚀</div>
-                <div class="float-element">⚡</div>
-              </div>
+            <h1 class="hero-title">
+              <span class="title-name">Armand Koffi</span>
+              <span class="title-role">
+                <span class="typed-text"></span>
+                <span class="cursor">|</span>
+              </span>
+            </h1>
+            <p class="hero-description">
+              Développeur Fullstack JavaScript orienté produit, je conçois des applications web complètes, de
+              l'interface utilisateur jusqu'à l'API backend. Spécialisé en React, TypeScript et Node.js, je crée des
+              solutions performantes, sécurisées et scalables, adaptées aux besoins réels des startups et des
+              entreprises innovantes.
+            </p>
+            <div class="hero-actions">
+              <button class="btn-primary"
+                onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                <span>Discutons de votre produit</span>
+                <i class="uil uil-arrow-right"></i>
+              </button>
+              <button class="btn-secondary"
+                onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">
+                <span>Voir mes réalisations</span>
+              </button>
             </div>
-          </div>
-        </section>
-
-        <!-- SECTION À PROPOS -->
-        <section class="about-section section" id="about">
-          <div class="section-container">
-            <div class="section-header">
-              <span class="section-tag">Mon profil</span>
-              <h2 class="section-title">À propos</h2>
-              <p class="section-subtitle">
-                Découvrez mon parcours et ma vision du développement web & mobile
-              </p>
-            </div>
-
-            <div class="about-content">
-              <div class="about-text">
-                <div class="text-card">
-                  <h3>Parcours & expertise</h3>
-                  <p>
-                    Développeur web & mobile, je conçois des applications robustes, performantes 
-                    et évolutives. Chaque projet est l’occasion de mettre en œuvre rigueur, UX et bonnes pratiques 
-                    tout en anticipant la montée en charge.
-                  </p>
-                  <p>
-                    Je considère le code comme un levier stratégique : lisible, maintenable et orienté 
-                    expérience utilisateur. Mon approche allie efficacité technique et vision produit.
-                  </p>
-                  <div class="stats-grid">
-                    <div class="stat-item">
-                      <span class="stat-number">15+</span>
-                      <span class="stat-label">Projets réalisés</span>
-                    </div>
-                    <div class="stat-item">
-                      <span class="stat-number">1+</span>
-                      <span class="stat-label">D'expérience pratique</span>
-                    </div>
-                    <div class="stat-item">
-                      <span class="stat-number">5+</span>
-                      <span class="stat-label">Technologies maîtrisées</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills-section">
-                <div class="skills-category">
-                  <h4>Développement Frontend</h4>
-                  <div class="skills-list">
-                    <span class="skill-tag">
-                      <i class="devicon-html5-plain"></i> HTML5
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-css3-plain"></i> CSS3
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-javascript-plain"></i> JavaScript ES6+
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-typescript-plain"></i> TypeScript
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-react-original"></i> React
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-vuejs-plain"></i> Vue.js
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-nextjs-plain"></i> Next.js
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-tailwindcss-plain"></i> TailwindCSS
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-bootstrap-plain"></i> Bootstrap
-                    </span>
-                  </div>
-                </div>
-
-                <div class="skills-category">
-                  <h4>Développement Mobile</h4>
-                  <div class="skills-list">
-                    <span class="skill-tag">
-                      <i class="devicon-react-original"></i> React Native
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-flutter-plain"></i> Flutter
-                    </span>
-                  </div>
-                </div>
-
-                <div class="skills-category">
-                  <h4>Développement Backend</h4>
-                  <div class="skills-list">
-                    <span class="skill-tag">
-                      <i class="devicon-nodejs-plain"></i> JavaScript (Node.js)
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-express-original"></i> Express.js
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-nestjs-plain"></i> NestJs
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-python-plain"></i> Python
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-flask-plain"></i> Flask
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-java-plain"></i> Java
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-spring-plain"></i> Spring Boot
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-php-plain"></i> PHP
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-laravel-plain"></i> Laravel
-                    </span>
-                  </div>
-                </div>
-
-                <div class="skills-category">
-                  <h4>Bases de données & Outils</h4>
-                  <div class="skills-list">
-                    <span class="skill-tag">
-                      <i class="devicon-mysql-plain"></i> MySQL
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-postgresql-plain"></i> PostgreSQL
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-mongodb-plain"></i> MongoDB
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-git-plain"></i> Git
-                    </span>
-                    <span class="skill-tag">
-                      <i class="devicon-docker-plain"></i> Docker
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- SECTION PROJETS -->
-        <section class="projects-section section" id="projects">
-          <div class="section-container">
-            <div class="section-header">
-              <span class="section-tag">Mes réalisations</span>
-              <h2 class="section-title">Projets concrets</h2>
-              <p class="section-subtitle">
-                Une sélection de projets conçus pour répondre à de vrais besoins métiers
-              </p>
-            </div>
-
-            <div class="projects-grid">
-              <div class="project-card featured">
-                <div class="project-image">
-                  <img
-                    src=""
-                    alt="DocuShare"
-                  />
-                </div>
-                <div class="project-content">
-                 <span class="project-category">SaaS</span>
-                  <h3 class="project-title">DocuShare – Gestion sécurisée de documents</h3>
-                  <p class="project-description">
-                    En cours de développement
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Spring Boot</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                  </div>
-                  <a href="#" class="project-btn">
-                    <span>Voir le projet</span>
-                    <i class="uil uil-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <div class="project-image">
-                  <img
-                    src="assets/images/TaskFlow.png"
-                    alt="TaskFlow"
-                  />
-                  <div class="project-overlay"></div>
-                </div>
-                <div class="project-content">
-                  <span class="project-category">Collaboration</span>
-                  <h3 class="project-title">TaskFlow – Gestion de tâches en temps réel</h3>
-                  <p class="project-description">
-                  Application collaborative pour organiser le travail en équipe. 
-                  Suivi des tâches en temps réel via WebSocket, attribution des 
-                  rôles et workflow clair (à faire, en cours, terminé).
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Spring Boot</span>
-                    <span class="tech-tag">MongoDB</span>
-                  </div>
-                  <a href="https://taskflow-henna-chi.vercel.app/" class="project-btn" target="_blank" rel="noopener noreferrer">
-                    <span>Voir le projet</span>
-                    <i class="uil uil-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <div class="project-image">
-                  <img
-                    src="assets/images/EduConnect.png"
-                    alt="EduConnect"
-                  />
-                  <div class="project-overlay"></div>
-                </div>
-                <div class="project-content">
-                 <span class="project-category">EdTech</span>
-                  <h3 class="project-title">EduConnect – Plateforme d’apprentissage</h3>
-                  <p class="project-description">
-                  Solution EdTech permettant aux formateurs de publier des cours interactifs 
-                  et aux étudiants de suivre leur progression avec un tableau de bord analytique.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Spring Boot</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                </div>
-                  <a href="https://educonnect-pied.vercel.app/" class="project-btn" target="_blank" rel="noopener noreferrer">
-                    <span>Voir le projet</span>
-                    <i class="uil uil-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <div class="project-image">
-                  <img
-                    src="assets/images/EventHub.png"
-                    alt="EventHub"
-                  />
-                  <div class="project-overlay"></div>
-                </div>
-                <div class="project-content">
-                  <span class="project-category">Événementiel</span>
-                  <h3 class="project-title">EventHub – Organisation et inscription</h3>
-                  <p class="project-description">
-                    Application de gestion d’événements (conférences, concerts, meetups) permettant 
-                    aux organisateurs de gérer leurs événements et aux participants de réserver en ligne.
-                  </p>
-                <div class="project-tech">
-                  <span class="tech-tag">React</span>
-                  <span class="tech-tag">Spring Boot</span>
-                  <span class="tech-tag">MySQL</span>
-                </div>
-                  <a href="https://eventhub-six-lemon.vercel.app/" class="project-btn" target="_blank" rel="noopener noreferrer">
-                    <span>Voir le projet</span>
-                    <i class="uil uil-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <div class="project-image">
-                  <img
-                    src="assets/images/HealthTrack.png"
-                    alt="HealthTrack"
-                  />
-                  <div class="project-overlay"></div>
-                </div>
-                <div class="project-content">
-                  <span class="project-category">Santé</span>
-                  <h3 class="project-title">HealthTrack – Suivi de santé personnel</h3>
-                  <p class="project-description">
-                    Application de bien-être permettant de suivre son sommeil, activité physique 
-                    et alimentation. Tableaux de bord personnalisés et graphiques interactifs pour 
-                    une vision claire de l’évolution.
-                  </p>
-                  <div class="project-tech">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Spring Boot</span>
-                    <span class="tech-tag">MongoDB</span>
-                  </div>
-                  <a href="https://healthtrack-brown.vercel.app/" class="project-btn" target="_blank" rel="noopener noreferrer">
-                    <span>Voir le projet</span>
-                    <i class="uil uil-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- SECTION CONTACT -->
-        <section class="contact-section section" id="contact">
-          <div class="section-container">
-            <div class="section-header">
-              <span class="section-tag">Travaillons ensemble</span>
-              <h2 class="section-title">Contactez-moi</h2>
-              <p class="section-subtitle">
-                Vous cherchez un développeur capable de livrer vite, 
-                bien et avec une vision long terme ? Parlons-en.
-              </p>
-            </div>
-
-            <div class="contact-content">
-              <div class="contact-info">
-                <div class="info-card">
-                  <div class="info-icon">
-                    <i class="uil uil-envelope"></i>
-                  </div>
-                  <div class="info-content">
-                    <h4>Email</h4>
-                    <p>armandokoffikoffi@gmail.com</p>
-                  </div>
-                </div>
-
-                <div class="info-card">
-                  <div class="info-icon">
-                    <i class="uil uil-phone"></i>
-                  </div>
-                  <div class="info-content">
-                    <h4>Téléphone</h4>
-                    <p>+225 07 59 68 39 40</p>
-                  </div>
-                </div>
-
-                <div class="info-card">
-                  <div class="info-icon">
-                    <i class="uil uil-whatsapp"></i>
-                  </div>
-                  <div class="info-content">
-                    <h4>WhatsApp</h4>
-                    <p>+225 01 51 17 83 19</p>
-                  </div>
-                </div>
-
-                <div class="availability-card">
-                  <div class="status-indicator"></div>
-                  <div class="availability-text">
-                    <span class="status"
-                      >Disponible pour de nouveaux projets</span>
-                    <span class="response-time">Réponse sous 24h</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="contact-form">
-                <form class="form">
-                  <div class="form-group">
-                    <div class="input-group">
-                      <input
-                        type="text"
-                        class="form-input"
-                        placeholder=" "
-                        title="Nom complet"
-                        required
-                      />
-                      <label class="form-label">Nom complet</label>
-                    </div>
-                    <div class="input-group">
-                      <input
-                        type="email"
-                        class="form-input"
-                        placeholder=" "
-                        title="Adresse email"
-                        required
-                      />
-                      <label class="form-label">Adresse email</label>
-                    </div>
-                  </div>
-
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-input"
-                      placeholder=" "
-                      title="Sujet du message"
-                      required
-                    />
-                    <label class="form-label">Sujet du message</label>
-                  </div>
-
-                  <div class="input-group">
-                    <textarea
-                      class="form-input form-textarea"
-                      placeholder="Votre message"
-                      title="Votre message"
-                      required
-                    ></textarea>
-                    <label class="form-label">Votre message</label>
-                  </div>
-
-                  <button type="submit" class="submit-btn">
-                    <span>Envoyer le message</span>
-                    <i class="uil uil-message"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <!-- Boutons de scroll -->
-
-      <!-- FOOTER -->
-      <footer class="footer">
-        <div class="footer-content">
-          <div class="footer-main">
-            <div class="footer-brand">
-              <h3>Armand Koffi</h3>
-              <p>Développeur Web & Mobile</p>
-            </div>
-
-            <div class="footer-links">
-              <a href="#home">Accueil</a>
-              <a href="#about">À propos</a>
-              <a href="#projects">Projets</a>
-              <a href="#contact">Contact</a>
-            </div>
-
-            <div class="footer-social">
-              <a href="https://github.com/ArmandoKoffi" class="social-link glass-effect" target="_blank" rel="noopener noreferrer">
+            <div class="social-links">
+              <a href="https://github.com/ArmandoKoffi" class="social-link glass-effect" target="_blank"
+                rel="noopener noreferrer">
                 <i class="uil uil-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/armando-koffi-koffi/" class="social-link glass-effect" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/armando-koffi-koffi/" class="social-link glass-effect"
+                target="_blank" rel="noopener noreferrer">
                 <i class="uil uil-linkedin"></i>
               </a>
-              <a href="https://wa.me/2250151178319" class="social-link glass-effect" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/2250151178319" class="social-link glass-effect" target="_blank"
+                rel="noopener noreferrer">
                 <i class="uil uil-whatsapp"></i>
               </a>
               <a href="#contact" class="social-link glass-effect">
@@ -590,17 +115,477 @@
               </a>
             </div>
           </div>
-
-          <div class="footer-bottom">
-            <p>&copy; 2025 Armand Koffi. Tous droits réservés.</p>
+          <div class="hero-image">
+            <div class="image-container glass-effect">
+              <img src="assets/images/avatar.jpg" alt="Armand Koffi - Développeur Web" class="static-image" />
+              <div class="rotating-border"></div>
+              <div class="image-overlay glass-effect"></div>
+            </div>
+            <div class="floating-elements">
+              <div class="float-element"><i class="uil uil-laptop"></i></div>
+              <div class="float-element"><i class="uil uil-rocket"></i></div>
+              <div class="float-element"><i class="uil uil-bolt"></i></div>
+            </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
 
-    <!-- SCRIPTS -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+      <!-- SECTION À PROPOS -->
+      <section class="about-section section" id="about">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-tag">Mon profil</span>
+            <h2 class="section-title">À propos</h2>
+            <p class="section-subtitle">
+              Découvrez mon parcours et ma vision du développement web & mobile
+            </p>
+          </div>
+
+          <div class="about-content">
+            <div class="about-text">
+              <div class="text-card">
+                <h3>Parcours & expertise</h3>
+                <p>
+                  Développeur Fullstack JavaScript avec 2 ans d'expérience, je suis spécialisé dans la conception
+                  d'applications web modernes et performantes. Mon expertise couvre l'ensemble de la stack JavaScript :
+                  <strong>React</strong> et <strong>TypeScript</strong> pour des interfaces réactives, et
+                  <strong>Node.js</strong> avec <strong>Express</strong> pour des backends robustes.
+                </p>
+                <p>
+                  Au-delà du code, j'ai une approche orientée produit. J'ai conçu et déployé plusieurs projets
+                  personnels complexes (plateforme de streaming, réseau social vocal, suivi de santé), démontrant ma
+                  capacité à gérer l'authentification, la sécurité, les paiements et les flux de données en temps réel.
+                  Je suis autonome, rigoureux et prêt à intégrer des équipes techniques ambitieuses, en télétravail ou
+                  sur site.
+                </p>
+                <div class="stats-grid">
+                  <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Projets Fullstack</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">Années d'expérience</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">JavaScript / TypeScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-section">
+              <!-- Frontend -->
+              <div class="skills-category">
+                <h4>Frontend</h4>
+                <div class="skills-list">
+                  <span class="skill-tag"><i class="devicon-react-original"></i> ReactJS</span>
+                  <span class="skill-tag"><i class="devicon-typescript-plain"></i> TypeScript</span>
+                  <span class="skill-tag"><i class="devicon-tailwindcss-plain"></i> Tailwind CSS</span>
+                  <span class="skill-tag"><i class="devicon-redux-original"></i> Redux Toolkit</span>
+                  <span class="skill-tag"><img src="https://cdn.simpleicons.org/shadcnui/white" class="skill-icon-img"
+                      alt="Shadcn"> Shadcn/ui</span>
+                  <span class="skill-tag"><img src="https://cdn.simpleicons.org/reactquery/white" class="skill-icon-img"
+                      alt="TanStack Query"> TanStack Query</span>
+                  <span class="skill-tag"><i class="devicon-framermotion-original"></i> Framer Motion</span>
+                </div>
+              </div>
+
+              <!-- Backend -->
+              <div class="skills-category">
+                <h4>Backend</h4>
+                <div class="skills-list">
+                  <span class="skill-tag"><i class="devicon-nodejs-plain"></i> NodeJS</span>
+                  <span class="skill-tag"><i class="devicon-express-original"></i> ExpressJS</span>
+                  <span class="skill-tag"><i class="uil uil-brackets-curly"></i> APIs REST</span>
+                  <span class="skill-tag"><i class="uil uil-key-skeleton"></i> Auth JWT</span>
+                  <span class="skill-tag"><i class="uil uil-shield-check"></i> Sécurité</span>
+                </div>
+              </div>
+
+              <!-- Base de données -->
+              <div class="skills-category">
+                <h4>Base de données</h4>
+                <div class="skills-list">
+                  <span class="skill-tag"><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                  <span class="skill-tag"><i class="devicon-mongoose-original"></i> Mongoose</span>
+                  <span class="skill-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
+                </div>
+              </div>
+
+              <!-- Outils & Environnement -->
+              <div class="skills-category">
+                <h4>Outils & Environnement</h4>
+                <div class="skills-list">
+                  <span class="skill-tag"><i class="devicon-git-plain"></i> Git & GitHub</span>
+                  <span class="skill-tag"><i class="devicon-postman-plain"></i> Postman</span>
+                  <span class="skill-tag"><img src="https://cdn.simpleicons.org/vercel/white" class="skill-icon-img"
+                      alt="Vercel"> Vercel</span>
+                  <span class="skill-tag"><img src="https://cdn.simpleicons.org/render/white" class="skill-icon-img"
+                      alt="Render"> Render</span>
+                  <span class="skill-tag"><i class="uil uil-users-alt"></i> Travail collaboratif</span>
+                </div>
+              </div>
+
+              <!-- Temps réel & Intégration -->
+              <div class="skills-category">
+                <h4>Temps réel & Intégration</h4>
+                <div class="skills-list">
+                  <span class="skill-tag"><i class="devicon-socketio-original"></i> Socket.io</span>
+                  <span class="skill-tag"><img src="https://cdn.simpleicons.org/stripe/white" class="skill-icon-img"
+                      alt="Stripe"> Stripe</span>
+                  <span class="skill-tag"><i class="uil uil-envelope-alt"></i> Services Email</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION PROJETS -->
+      <section class="projects-section section" id="projects">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-tag">Mes réalisations</span>
+            <h2 class="section-title">Projets concrets</h2>
+            <p class="section-subtitle">
+              Une sélection de projets conçus pour répondre à de vrais besoins métiers
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- PROJET 1 : Netflix Clone -->
+            <div class="project-card featured">
+              <div class="project-image">
+                <div class="image-placeholder"
+                  style="background: linear-gradient(135deg, #000000 0%, #E50914 100%); height: 100%; min-height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: bold;">
+                  Netflix Clone
+                </div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">Streaming / B2C</span>
+                <h3 class="project-title">NetFlix Clone – Streaming Sécurisé</h3>
+                <p class="project-description">
+                  Plateforme de streaming complète avec authentification JWT sécurisée,
+                  gestion des abonnements via Stripe, et lecture vidéo optimisée.
+                  Architecture MERN performante reproduisant l'UX/UI de Netflix.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+                <a href="projects/netflix-clone.html" class="project-btn">
+                  <span>Voir le projet</span>
+                  <i class="uil uil-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJET 2 : HealthTrack -->
+            <div class="project-card featured">
+              <div class="project-image">
+                <img src="assets/images/HealthTrack.png" alt="HealthTrack" />
+                <div class="project-overlay"></div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">Santé / Bien-être</span>
+                <h3 class="project-title">HealthTrack – Suivi Santé & Notifications</h3>
+                <p class="project-description">
+                  Application intelligente de suivi bien-être. Algorithmes personnalisés
+                  pour le calcul calorique, suivi du sommeil et système de notifications
+                  proactif. Tableaux de bord de données en temps réel.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+                <a href="projects/healthtrack.html" class="project-btn">
+                  <span>Voir le projet</span>
+                  <i class="uil uil-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJET 3 : VocalExpress -->
+            <div class="project-card featured">
+              <div class="project-image">
+                <div class="image-placeholder"
+                  style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); height: 100%; min-height: 200px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; font-weight: bold;">
+                  VocalExpress
+                </div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">Social / Temps Réel</span>
+                <h3 class="project-title">VocalExpress – Réseau Social Vocal</h3>
+                <p class="project-description">
+                  Plateforme sociale innovante 'Voice-First'. Communication temps réel
+                  via Socket.io, partage de messages vocaux instantanés,
+                  et fils d'actualité dynamiques. Scalabilité assurée par Node.js.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Socket.io</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+                <a href="projects/vocalexpress.html" class="project-btn">
+                  <span>Voir le projet</span>
+                  <i class="uil uil-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/TaskFlow.png" alt="TaskFlow" />
+                <div class="project-overlay"></div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">Collaboration</span>
+                <h3 class="project-title">TaskFlow – Collaboration SaaS</h3>
+                <p class="project-description">
+                  Application collaborative SaaS type Trello. Gestion de projet en temps réel
+                  avec mises à jour instantanées via WebSocket et API REST Express.
+                  Architecture modulaire et réactive.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+                <a href="projects/taskflow.html" class="project-btn">
+                  <span>Voir le projet</span>
+                  <i class="uil uil-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/EduConnect.png" alt="EduConnect" />
+                <div class="project-overlay"></div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">EdTech</span>
+                <h3 class="project-title">EduConnect – LMS Platform</h3>
+                <p class="project-description">
+                  LMS (Learning Management System) complet. Interface SPA fluide en React,
+                  gestion des cours et des étudiants via une API Node.js/Express.
+                  Tableaux de bord analytiques et suivi de progression.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+                <a href="projects/educonnect.html" class="project-btn">
+                  <span>Voir le projet</span>
+                  <i class="uil uil-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/EventHub.png" alt="EventHub" />
+                <div class="project-overlay"></div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">Événementiel</span>
+                <h3 class="project-title">EventHub – Gestionnaire d'événements</h3>
+                <p class="project-description">
+                  Plateforme de billetterie événementielle. Gestion des réservations,
+                  génération de QR Codes et paiements intégrés.
+                  Backend Express performant et frontend React optimisé SEO.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+                <a href="projects/eventhub.html" class="project-btn">
+                  <span>Voir le projet</span>
+                  <i class="uil uil-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="assets/images/DocuShare.png" alt="DocuShare" />
+                <div class="project-overlay"></div>
+              </div>
+              <div class="project-content">
+                <span class="project-category">Enterprise</span>
+                <h3 class="project-title">DocuShare – GED Sécurisée</h3>
+                <p class="project-description">
+                  Système de Gestion Électronique de Documents (GED).
+                  Upload sécurisé, partage de fichiers chiffré, et
+                  gestion fine des droits d'accès. Architecture MERN.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+                <a href="projects/docushare.html" class="project-btn">
+                  <span>Voir le projet</span>
+                  <i class="uil uil-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION CONTACT -->
+      <section class="contact-section section" id="contact">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-tag">Travaillons ensemble</span>
+            <h2 class="section-title">Contactez-moi</h2>
+            <p class="section-subtitle">
+              Vous cherchez un développeur fullstack autonome pour vos projets B2C ?
+              Expert en React et Node.js, habitué du travail à distance. Parlons-en.
+            </p>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="uil uil-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Email</h4>
+                  <p>armandkoffikoffi9@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="uil uil-phone"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Téléphone</h4>
+                  <p>+225 07 59 68 39 40</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon">
+                  <i class="uil uil-whatsapp"></i>
+                </div>
+                <div class="info-content">
+                  <h4>WhatsApp</h4>
+                  <p>+225 01 51 17 83 19</p>
+                </div>
+              </div>
+
+              <div class="availability-card">
+                <div class="status-indicator"></div>
+                <div class="availability-text">
+                  <span class="status">Disponible pour missions en télétravail</span>
+                  <span class="response-time">Réponse sous 24h</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <form class="form">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-input" placeholder=" " title="Nom complet" required />
+                    <label class="form-label">Nom complet</label>
+                  </div>
+                  <div class="input-group">
+                    <input type="email" class="form-input" placeholder=" " title="Adresse email" required />
+                    <label class="form-label">Adresse email</label>
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <input type="text" class="form-input" placeholder=" " title="Sujet du message" required />
+                  <label class="form-label">Sujet du message</label>
+                </div>
+
+                <div class="input-group">
+                  <textarea class="form-input form-textarea" placeholder="Votre message" title="Votre message"
+                    required></textarea>
+                  <label class="form-label">Votre message</label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                  <span>Envoyer le message</span>
+                  <i class="uil uil-message"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Boutons de scroll -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <h3>Armand Koffi</h3>
+            <p>Développeur Fullstack JavaScript</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="#home">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="footer-social">
+            <a href="https://github.com/ArmandoKoffi" class="social-link glass-effect" target="_blank"
+              rel="noopener noreferrer">
+              <i class="uil uil-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/armando-koffi-koffi/" class="social-link glass-effect" target="_blank"
+              rel="noopener noreferrer">
+              <i class="uil uil-linkedin"></i>
+            </a>
+            <a href="https://wa.me/2250151178319" class="social-link glass-effect" target="_blank"
+              rel="noopener noreferrer">
+              <i class="uil uil-whatsapp"></i>
+            </a>
+            <a href="#contact" class="social-link glass-effect">
+              <i class="uil uil-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Armand Koffi. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script type="module" src="assets/js/cinematic-titles.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

@@ -7,6 +7,7 @@
     transform: translateY(30px);
     filter: blur(5px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -20,6 +21,7 @@
     transform: translateY(0);
     filter: blur(0);
   }
+
   to {
     opacity: 0;
     transform: translateY(30px);
@@ -168,8 +170,7 @@ body {
   transition: all var(--transition-smooth);
 }
 
-.bg-element {
-}
+
 .bg-anim-rotate {
   width: 120px;
   height: 120px;
@@ -179,6 +180,7 @@ body {
   opacity: 0.18;
   animation: rotateBg 24s linear infinite;
 }
+
 .bg-anim-scale {
   width: 90px;
   height: 90px;
@@ -188,6 +190,7 @@ body {
   opacity: 0.13;
   animation: scaleBg 16s ease-in-out infinite alternate;
 }
+
 .bg-anim-fade {
   width: 140px;
   height: 140px;
@@ -197,6 +200,7 @@ body {
   opacity: 0.10;
   animation: fadeBg 18s ease-in-out infinite alternate;
 }
+
 .bg-anim-move {
   width: 60px;
   height: 60px;
@@ -204,34 +208,66 @@ body {
   left: 10%;
   background: linear-gradient(120deg, var(--primary-hover), var(--secondary-color));
   opacity: 0.16;
-  animation: moveBg 20s cubic-bezier(.4,2,.6,1) infinite alternate;
+  animation: moveBg 20s cubic-bezier(.4, 2, .6, 1) infinite alternate;
 }
 
 @keyframes rotateBg {
-  0% { transform: rotate(0deg) scale(1); }
-  100% { transform: rotate(360deg) scale(1.1); }
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1.1);
+  }
 }
+
 @keyframes scaleBg {
-  0% { transform: scale(1) translateY(0); }
-  50% { transform: scale(1.3) translateY(-30px); }
-  100% { transform: scale(1) translateY(0); }
+  0% {
+    transform: scale(1) translateY(0);
+  }
+
+  50% {
+    transform: scale(1.3) translateY(-30px);
+  }
+
+  100% {
+    transform: scale(1) translateY(0);
+  }
 }
+
 @keyframes fadeBg {
-  0% { opacity: 0.10; }
-  50% { opacity: 0.25; }
-  100% { opacity: 0.10; }
+  0% {
+    opacity: 0.10;
+  }
+
+  50% {
+    opacity: 0.25;
+  }
+
+  100% {
+    opacity: 0.10;
+  }
 }
+
 @keyframes moveBg {
-  0% { transform: translateY(0) translateX(0); }
-  50% { transform: translateY(-40px) translateX(60px) scale(1.2); }
-  100% { transform: translateY(0) translateX(0); }
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: translateY(-40px) translateX(60px) scale(1.2);
+  }
+
+  100% {
+    transform: translateY(0) translateX(0);
+  }
 }
+
+.bg-element {
   position: absolute;
-  background: radial-gradient(
-    circle at 60% 40%,
-    var(--primary-color) 60%,
-    var(--secondary-color) 100%
-  );
+  background: radial-gradient(circle at 60% 40%,
+      var(--primary-color) 60%,
+      var(--secondary-color) 100%);
   border-radius: 50%;
   animation: float 18s infinite alternate cubic-bezier(0.4, 2, 0.6, 1);
   transform-origin: center center;
@@ -278,19 +314,23 @@ body {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px) rotate(0deg) scale(1);
     opacity: 0.8;
   }
+
   25% {
     transform: translateY(-20px) rotate(90deg) scale(1.1);
     opacity: 1;
   }
+
   50% {
     transform: translateY(-40px) rotate(180deg) scale(1.2);
     opacity: 0.8;
   }
+
   75% {
     transform: translateY(-20px) rotate(270deg) scale(1.1);
     opacity: 1;
@@ -335,10 +375,12 @@ body {
 }
 
 @keyframes navbarFloat {
+
   0%,
   100% {
     transform: translateX(-50%) translateY(0);
   }
+
   50% {
     transform: translateX(-50%) translateY(-10px);
   }
@@ -385,11 +427,13 @@ body {
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     opacity: 1;
     transform: scale(1);
   }
+
   50% {
     opacity: 0.8;
     transform: scale(1.1);
@@ -566,11 +610,9 @@ body {
 
 .title-name {
   display: block;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(135deg,
+      var(--primary-color),
+      var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -581,6 +623,9 @@ body {
   display: block;
   color: var(--text-secondary);
   font-weight: 600;
+  min-height: 1.2em;
+  /* Réserve l'espace pour éviter le décalage */
+  margin-top: 0.5rem;
   animation: slideInLeft 0.8s ease 0.6s both;
 }
 
@@ -590,10 +635,12 @@ body {
 }
 
 @keyframes blink {
+
   0%,
   50% {
     opacity: 1;
   }
+
   51%,
   100% {
     opacity: 0;
@@ -640,12 +687,10 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.5s;
 }
 
@@ -733,30 +778,40 @@ body {
 }
 
 @keyframes floatImage {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
+
   25% {
     transform: translateY(-15px) rotate(2deg);
   }
+
   50% {
     transform: translateY(-10px) rotate(0deg);
   }
+
   75% {
     transform: translateY(-20px) rotate(-2deg);
   }
 }
 
 @keyframes morphShape {
-  0%, 100% {
+
+  0%,
+  100% {
     border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%;
   }
+
   25% {
     border-radius: 50% 50% 40% 60% / 55% 45% 55% 45%;
   }
+
   50% {
     border-radius: 45% 55% 55% 45% / 50% 50% 50% 50%;
   }
+
   75% {
     border-radius: 55% 45% 50% 50% / 45% 55% 45% 55%;
   }
@@ -776,11 +831,9 @@ body {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: linear-gradient(
-    45deg,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(45deg,
+      var(--primary-color),
+      var(--secondary-color));
   opacity: 0.1;
   z-index: 1;
 }
@@ -789,6 +842,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -798,6 +852,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -834,23 +889,27 @@ body {
 }
 
 @keyframes floatAround {
+
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
   }
+
   25% {
     transform: translateY(-20px) rotate(90deg);
   }
+
   50% {
     transform: translateY(-10px) rotate(180deg);
   }
+
   75% {
     transform: translateY(-30px) rotate(270deg);
   }
 }
 
 @media (max-width: 768px) {
-   .image-container {
+  .image-container {
     width: 280px;
     height: 280px;
   }
@@ -867,6 +926,7 @@ body {
     justify-content: center;
     z-index: 10;
   }
+
   .scroll-indicator span {
     text-align: center;
     font-size: 1.1rem;
@@ -884,10 +944,12 @@ body {
     gap: 1rem;
     width: 100%;
   }
+
   .hero-content {
     align-items: center;
     text-align: center;
   }
+
   .hero-actions {
     justify-content: center;
     flex-direction: column;
@@ -896,6 +958,7 @@ body {
     display: flex;
   }
 }
+
 .scroll-indicator {
   position: absolute;
   bottom: 2rem;
@@ -921,9 +984,11 @@ body {
     transform: translateY(0);
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     transform: translateY(20px);
     opacity: 0;
@@ -1088,6 +1153,21 @@ body {
 }
 
 .skill-tag:hover i {
+  transform: scale(1.1);
+}
+
+.skill-icon-img {
+  width: 1.1rem;
+  height: 1.1rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+  transition: all var(--transition-smooth);
+}
+
+.skill-tag:hover .skill-icon-img {
+  opacity: 1;
   transform: scale(1.1);
 }
 
@@ -1257,11 +1337,9 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: linear-gradient(
-    135deg,
-    var(--accent-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(135deg,
+      var(--accent-color),
+      var(--secondary-color));
   color: white;
   border-radius: 50px;
   padding: 1.5rem;
@@ -1301,11 +1379,13 @@ body {
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
+
 .form-input[title="Sujet du message"] {
   margin-bottom: 1.2rem;
   border-bottom: 2px solid var(--primary-color);
   border-radius: 50px 50px 0 0;
 }
+
 .form-textarea {
   margin-top: 1.2rem;
   border-top: 2px solid var(--primary-color);
@@ -1350,8 +1430,8 @@ body {
   padding: 0 0.5rem;
 }
 
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
+.form-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
   top: -0.5rem;
   left: 0.75rem;
   font-size: 0.875rem;
@@ -1384,12 +1464,10 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.5s;
 }
 
@@ -1405,11 +1483,9 @@ body {
 
 /* ===== FOOTER ===== */
 .footer {
-  background: linear-gradient(
-    120deg,
-    var(--bg-secondary) 60%,
-    var(--primary-color) 100%
-  );
+  background: linear-gradient(120deg,
+      var(--bg-secondary) 60%,
+      var(--primary-color) 100%);
   padding: 3rem 0 2rem;
   margin-top: 4rem;
   border-top-left-radius: 32px;
@@ -1517,6 +1593,7 @@ body {
   transition: all 0.22s cubic-bezier(0.4, 2, 0.6, 1),
     box-shadow 0.22s cubic-bezier(0.4, 2, 0.6, 1);
 }
+
 .btn-primary:hover,
 .btn-secondary:hover,
 .cv-btn:hover,
@@ -1537,15 +1614,18 @@ body {
     text-align: center;
     gap: 1.5rem;
   }
+
   .footer-social {
     justify-content: center;
     margin-top: 1rem;
   }
+
   .footer-links {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
   }
+
   .nav-menu.active .nav-list {
     display: flex;
     position: absolute;
@@ -1563,6 +1643,7 @@ body {
     gap: 0.5rem;
     z-index: 1001;
   }
+
   .nav-menu.active .nav-list .nav-link {
     color: #fff;
     font-size: 1.2rem;
@@ -1574,6 +1655,7 @@ body {
     box-shadow: none;
     transition: background 0.18s, color 0.18s;
   }
+
   .nav-menu.active .nav-list .nav-link:hover {
     background: #fff;
     color: var(--primary-color);
@@ -1581,6 +1663,7 @@ body {
 }
 
 @media (max-width: 1024px) {
+
   .hero-container,
   .about-content,
   .contact-content {
@@ -1696,12 +1779,12 @@ body {
   .skills-list {
     gap: 0.5rem;
   }
-  
+
   .skill-tag {
     padding: 0.6rem 0.8rem;
     font-size: 0.8rem;
   }
-  
+
   .skill-tag i {
     font-size: 1rem;
   }

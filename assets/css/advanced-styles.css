@@ -54,22 +54,36 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(45deg, 
-    transparent 30%, 
-    rgba(99, 102, 241, 0.03) 40%, 
-    transparent 50%,
-    rgba(6, 182, 212, 0.03) 60%,
-    transparent 70%);
+  background: linear-gradient(45deg,
+      transparent 30%,
+      rgba(99, 102, 241, 0.03) 40%,
+      transparent 50%,
+      rgba(6, 182, 212, 0.03) 60%,
+      transparent 70%);
   animation: backgroundShift 20s linear infinite;
   z-index: -1;
 }
 
 @keyframes backgroundShift {
-  0% { transform: rotate(0deg) translateX(-20px); }
-  25% { transform: rotate(90deg) translateX(20px); }
-  50% { transform: rotate(180deg) translateX(-20px); }
-  75% { transform: rotate(270deg) translateX(20px); }
-  100% { transform: rotate(360deg) translateX(-20px); }
+  0% {
+    transform: rotate(0deg) translateX(-20px);
+  }
+
+  25% {
+    transform: rotate(90deg) translateX(20px);
+  }
+
+  50% {
+    transform: rotate(180deg) translateX(-20px);
+  }
+
+  75% {
+    transform: rotate(270deg) translateX(20px);
+  }
+
+  100% {
+    transform: rotate(360deg) translateX(-20px);
+  }
 }
 
 /* Amélioration des éléments flottants */
@@ -104,9 +118,17 @@
 }
 
 @keyframes conicRotate {
-  0% { transform: rotate(0deg) scale(1); }
-  50% { transform: rotate(180deg) scale(1.3); }
-  100% { transform: rotate(360deg) scale(1); }
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.3);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
 }
 
 /* Amélioration de la navbar mobile */
@@ -187,10 +209,21 @@
   transform: translateX(-30px);
 }
 
-.nav-menu.active .nav-link:nth-child(1) { animation-delay: 0.1s; }
-.nav-menu.active .nav-link:nth-child(2) { animation-delay: 0.2s; }
-.nav-menu.active .nav-link:nth-child(3) { animation-delay: 0.3s; }
-.nav-menu.active .nav-link:nth-child(4) { animation-delay: 0.4s; }
+.nav-menu.active .nav-link:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.nav-menu.active .nav-link:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.nav-menu.active .nav-link:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.nav-menu.active .nav-link:nth-child(4) {
+  animation-delay: 0.4s;
+}
 
 @keyframes slideInFromLeft {
   to {
@@ -218,9 +251,18 @@
   transform-origin: center;
 }
 
-.nav-toggle span:nth-child(1) { top: 6px; }
-.nav-toggle span:nth-child(2) { top: 50%; transform: translateY(-50%); }
-.nav-toggle span:nth-child(3) { bottom: 6px; }
+.nav-toggle span:nth-child(1) {
+  top: 6px;
+}
+
+.nav-toggle span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-toggle span:nth-child(3) {
+  bottom: 6px;
+}
 
 .nav-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
@@ -292,9 +334,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, 
-    rgba(99, 102, 241, 0.1) 0%, 
-    rgba(6, 182, 212, 0.05) 100%);
+  background: linear-gradient(135deg,
+      rgba(99, 102, 241, 0.1) 0%,
+      rgba(6, 182, 212, 0.05) 100%);
   border-radius: inherit;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -307,24 +349,29 @@
 
 .depth-card:hover {
   transform: translateY(-12px) rotateX(5deg);
-  box-shadow: 
+  box-shadow:
     0 32px 64px rgba(0, 0, 0, 0.15),
     0 16px 32px rgba(99, 102, 241, 0.1);
 }
 
 /* Loading animations améliorées */
 .loading-skeleton {
-  background: linear-gradient(90deg, 
-    var(--bg-secondary) 25%, 
-    var(--bg-tertiary) 50%, 
-    var(--bg-secondary) 75%);
+  background: linear-gradient(90deg,
+      var(--bg-secondary) 25%,
+      var(--bg-tertiary) 50%,
+      var(--bg-secondary) 75%);
   background-size: 200% 100%;
   animation: loading 1.5s infinite;
 }
 
 @keyframes loading {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
 }
 
 /* Amélioration des boutons avec micro-interactions */
@@ -421,19 +468,20 @@
 
 /* Améliorations responsives */
 @media (max-width: 768px) {
+
   .cursor-dot,
   .cursor-outline {
     display: none !important;
   }
-  
+
   .nav-menu {
     position: static;
   }
-  
+
   .depth-card:hover {
     transform: translateY(-8px);
   }
-  
+
   .parallax-element {
     transform: none !important;
   }
@@ -444,12 +492,12 @@
     margin: 0.5rem;
     padding: 1.5rem 1rem;
   }
-  
+
   .nav-menu.active .nav-link {
     padding: 0.75rem 1rem;
     font-size: 1rem;
   }
-  
+
   .bg-element {
     display: none;
   }
@@ -522,6 +570,75 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== CINEMATIC TITLE EFFECTS ===== */
+.hero-title,
+.section-title {
+  overflow: visible !important;
+  perspective: 1000px;
+}
+
+.cinematic-word {
+  display: inline-block;
+  white-space: nowrap;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cinematic-word:hover {
+  transform: scale(1.03);
+}
+
+.cinematic-char {
+  display: inline-block;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: default;
+  position: relative;
+  color: inherit;
+}
+
+.cinematic-char:hover {
+  color: var(--secondary-color) !important;
+  transform: scale(1.5) translateY(-5px) rotate(2deg);
+  text-shadow:
+    0 0 15px var(--secondary-color),
+    0 0 30px var(--secondary-color),
+    0 10px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  filter: brightness(1.2);
+}
+
+/* Light mode adjustments */
+[data-theme="light"] .cinematic-char:hover {
+  color: var(--primary-color) !important;
+  text-shadow:
+    0 0 10px var(--primary-color),
+    0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Staggered entrance animation (optional, triggers once on load) */
+@keyframes cinematicEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(20px) rotateX(-90deg);
+    filter: blur(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+    filter: blur(0);
+  }
+}
+
+.cinematic-char {
+  animation: cinematicEntrance 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+  animation-delay: calc(var(--char-index) * 0.03s);
 }

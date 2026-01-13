@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthTrack - Armand Koffi</title>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/advanced-styles.css" />
+</head>
+
+<body>
+    <!-- BACKGROUND -->
+    <!-- Background animé (Canvas injecté par particles.js) -->
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Armando</span>
+                <span class="logo-dot">.</span>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="../index.html#home" class="nav-link">Accueil</a></li>
+                    <li><a href="../index.html#about" class="nav-link">À propos</a></li>
+                    <li><a href="../index.html#projects" class="nav-link active">Projets</a></li>
+                    <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <!-- Close button for mobile -->
+                <i class="uil uil-times nav-close" id="navClose"
+                    style="position: absolute; top: 1rem; right: 1.5rem; font-size: 1.5rem; cursor: pointer; display: none;"></i>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="uil uil-moon"></i>
+                </button>
+                <button class="cv-btn" onclick="window.open('../assets/pdf/MON CV 2025.pdf')">
+                    <i class="uil uil-download-alt"></i>
+                    <span>CV</span>
+                </button>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <main class="main-content">
+
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <!-- BACK BUTTON -->
+                    <div style="margin-bottom: 2rem; animation: slideInLeft 0.8s ease 0.1s both;">
+                        <a href="../index.html#projects" class="btn-secondary"
+                            style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">
+                            <i class="uil uil-arrow-left"></i> Retour
+                        </a>
+                    </div>
+
+                    <div class="hero-badge glass-effect">
+                        <span>Santé & Bien-être</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-name">HealthTrack</span>
+                    </h1>
+                    <p class="hero-description">
+                        Un assistant personnel de santé intelligent pour suivre le sommeil, l'activité physique
+                        et la nutrition avec des analyses en temps réel.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://healthtrack-brown.vercel.app/" class="btn-primary" target="_blank">
+                            Voir le Site <i class="uil uil-external-link-alt" style="margin-left:5px;"></i>
+                        </a>
+                        <a href="#" class="btn-secondary" target="_blank">
+                            Frontend <i class="uil uil-github" style="margin-left:5px;"></i>
+                        </a>
+                        <a href="#" class="btn-secondary" target="_blank">
+                            Backend <i class="uil uil-github" style="margin-left:5px;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FIXED IMAGE CONTAINER (Rectangular, No Float/Morph) -->
+                <div class="hero-image" style="animation: fadeInRight 1s ease;">
+                    <div class="project-card"
+                        style="width: 100%; max-width: 500px; margin: 0 auto; transform: none; box-shadow: var(--glass-shadow);">
+                        <div class="project-image" style="height: 300px;">
+                            <img src="../assets/images/HealthTrack.png" alt="HealthTrack"
+                                style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DETAILS SECTION -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Détails techniques</span>
+                    <h2 class="section-title">Au cœur du projet</h2>
+                    <p class="section-subtitle">
+                        Analyse approfondie de l'architecture et des solutions implémentées.
+                    </p>
+                </div>
+
+                <div class="about-content">
+
+                    <!-- LEFT COLUMN -->
+                    <div class="about-description">
+                        <div class="text-card mb-4" style="margin-bottom: 2rem;">
+                            <h3>Vue d'ensemble</h3>
+                            <p>
+                                HealthTrack répond au besoin croissant de suivi de santé personnalisé.
+                                L'application permet aux utilisateurs de consigner leurs données quotidiennes et de
+                                visualiser
+                                leur progression via des tableaux de bord interactifs.
+                            </p>
+                        </div>
+
+                        <div class="text-card">
+                            <h3>Challenges & Solutions</h3>
+
+                            <h4 style="margin-top:1.5rem; margin-bottom:0.5rem; color:var(--text-primary);"><i
+                                    class="uil uil-chart-line"
+                                    style="color:var(--primary-color); margin-right:0.5rem;"></i> Visualisation</h4>
+                            <p>
+                                Implémentation de graphiques complexes (Chart.js) pour rendre les données brutes
+                                intelligibles.
+                            </p>
+
+                            <h4 style="margin-top:1.5rem; margin-bottom:0.5rem; color:var(--text-primary);"><i
+                                    class="uil uil-bell" style="color:var(--primary-color); margin-right:0.5rem;"></i>
+                                Notifications</h4>
+                            <p>
+                                Système de rappels proactifs géré via Node.js cron jobs et WebSockets.
+                            </p>
+
+                            <h4 style="margin-top:1.5rem; margin-bottom:0.5rem; color:var(--text-primary);"><i
+                                    class="uil uil-mobile-android"
+                                    style="color:var(--primary-color); margin-right:0.5rem;"></i> Mobile
+                                First</h4>
+                            <p>
+                                Une attention particulière a été portée à l'expérience mobile, support privilégié pour
+                                ce type d'app.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="skills-section">
+                        <!-- TECH STACK -->
+                        <div class="skills-category">
+                            <h4>Stack Technique</h4>
+                            <div class="skills-list">
+                                <span class="skill-tag"><i class="devicon-react-original"></i> React</span>
+                                <span class="skill-tag"><i class="devicon-typescript-plain"></i> TypeScript</span>
+                                <span class="skill-tag"><i class="devicon-nodejs-plain"></i> Node.js</span>
+                                <span class="skill-tag"><i class="devicon-express-original"></i> Express</span>
+                                <span class="skill-tag"><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                            </div>
+                        </div>
+
+                        <!-- FEATURES -->
+                        <div class="text-card" style="margin-top: 2rem;">
+                            <h3>Fonctionnalités Clés</h3>
+                            <ul
+                                style="list-style-type: disc; padding-left: 1.5rem; color: var(--text-secondary); line-height: 1.8;">
+                                <li>Dashboard personnalisé</li>
+                                <li>Suivi calories & sommeil</li>
+                                <li>Objectifs quotidiens</li>
+                                <li>Badges de réussite</li>
+                                <li>Mode Sombre/Clair</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT CTA -->
+        <section class="section" style="padding-top:0;">
+            <div class="container" style="text-align:center;">
+                <div class="glass-effect" style="padding: 3rem; border-radius: 20px; max-width: 800px; margin: 0 auto;">
+                    <h2 class="section-title" style="margin-bottom: 1rem;">Intéressé par ce profil ?</h2>
+                    <p class="section-subtitle" style="margin-bottom: 2rem;">
+                        Discutons de vos besoins et de la manière dont je peux vous aider à réaliser vos projets.
+                    </p>
+                    <a href="../index.html#contact" class="btn-primary" style="display: inline-flex;">
+                        Me Contacter <i class="uil uil-message" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h3>Armand Koffi</h3>
+                    <p>Développeur Fullstack JavaScript</p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="../index.html#home">Accueil</a>
+                    <a href="../index.html#about">À propos</a>
+                    <a href="../index.html#projects">Projets</a>
+                    <a href="../index.html#contact">Contact</a>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://github.com/ArmandoKoffi" class="social-link glass-effect" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/armando-koffi-koffi/" class="social-link glass-effect"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://wa.me/2250151178319" class="social-link glass-effect" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="uil uil-whatsapp"></i>
+                    </a>
+                    <a href="mailto:armandkoffikoffi9@gmail.com" class="social-link glass-effect">
+                        <i class="uil uil-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Armand Koffi. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- Motion One & Particles -->
+    <script type="module" src="../assets/js/cinematic-titles.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
