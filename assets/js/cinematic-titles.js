@@ -1,42 +1,60 @@
 /**
- * Cinematic Titles Animation Logic
- * Splits titles into individual words and characters for advanced hover effects.
+ * Cinematic Titles Animation Logic - v2 (Motion One Edition)
+ * Splits titles and applies staggered orchestration using Motion One.
  */
 
 export function initCinematicTitles() {
     const titles = document.querySelectorAll('.hero-title, .section-title');
 
     titles.forEach(title => {
-        // Save original text for accessibility or reset if needed
         const originalText = title.textContent.trim();
         const words = originalText.split(' ');
-
-        // Clear title content
         title.innerHTML = '';
 
         words.forEach((word, wordIndex) => {
             const wordSpan = document.createElement('span');
             wordSpan.className = 'cinematic-word';
+            wordSpan.style.display = 'inline-block';
 
             const chars = word.split('');
-            chars.forEach((char, charIndex) => {
+            chars.forEach((char) => {
                 const charSpan = document.createElement('span');
                 charSpan.className = 'cinematic-char';
                 charSpan.textContent = char;
-                // Optional: add stagger delay for entry animation if desired
-                charSpan.style.setProperty('--char-index', charIndex);
+                charSpan.style.display = 'inline-block';
                 wordSpan.appendChild(charSpan);
             });
 
             title.appendChild(wordSpan);
-
-            // Add a space between words, but not after the last word
             if (wordIndex < words.length - 1) {
                 title.appendChild(document.createTextNode(' '));
             }
         });
+
+        // Orchestrate entrance with Motion One
+        if (typeof window.motion !== 'undefined') {
+            const { animate, stagger, inView } = window.motion;
+
+            // Animate when the title enters the viewport
+            inView(title, () => {
+                animate(
+                    title.querySelectorAll('.cinematic-char'),
+                    {
+                        opacity: [0, 1],
+                        y: [20, 0],
+                        rotateX: [-90, 0],
+                        filter: ['blur(10px)', 'blur(0px)']
+                    },
+                    {
+                        delay: stagger(0.04),
+                        duration: 0.8,
+                        easing: [0.2, 0.8, 0.2, 1]
+                    }
+                );
+            });
+        }
     });
 }
 
-// Auto-init if this script is loaded directly or via module
-document.addEventListener('DOMContentLoaded', initCinematicTitles);
+// Global initialization
+window.addEventListener('load', initCinematicTitles);
