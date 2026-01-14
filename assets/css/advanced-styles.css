@@ -625,10 +625,49 @@
     0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* ===== GLOBAL CINEMATIC REVEALS ===== */
+/* Only hide if JS is ready to animate them */
+html.js-ready section,
+html.js-ready .projects-grid>*,
+html.js-ready .education-items>*,
+html.js-ready .experience-items>*,
+html.js-ready footer {
+  opacity: 0;
+  will-change: transform, opacity, filter;
+}
+
+.cinematic-word,
+.cinematic-char,
+.btn,
+.social-icon,
+.nav-link {
+  will-change: transform, opacity, color, text-shadow;
+}
+
+/* Custom Scrollbar Cinematic Feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+  border: 2px solid var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
 #particle-canvas {
   mix-blend-mode: screen;
   opacity: 0.9;
   transition: opacity 1s ease;
+  pointer-events: none;
 }
 
 [data-theme="light"] #particle-canvas {
