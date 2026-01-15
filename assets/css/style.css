@@ -667,10 +667,11 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  white-space: nowrap;
   background: var(--primary-color);
   color: white;
   border: none;
-  padding: 1rem 2rem;
+  padding: 0.85rem 1.7rem;
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
@@ -706,10 +707,14 @@ body {
 }
 
 .btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
   background: transparent;
   color: var(--text-primary);
   border: 2px solid var(--border-color);
-  padding: 1rem 2rem;
+  padding: 0.85rem 1.7rem;
   border-radius: 50px;
   font-weight: 600;
   cursor: pointer;
@@ -720,6 +725,12 @@ body {
   border-color: var(--primary-color);
   color: var(--primary-color);
   transform: translateY(-2px);
+}
+
+.btn-secondary.back-btn {
+  display: inline-flex;
+  gap: 0.3rem;
+  white-space: nowrap;
 }
 
 .social-links {
