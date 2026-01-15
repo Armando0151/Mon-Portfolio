@@ -610,13 +610,14 @@ body {
 
 .title-name {
   display: block;
-  background: linear-gradient(135deg,
-      var(--primary-color),
-      var(--secondary-color));
+  animation: slideInLeft 0.8s ease 0.4s both;
+}
+
+.title-name .cinematic-char {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: slideInLeft 0.8s ease 0.4s both;
 }
 
 .title-role {

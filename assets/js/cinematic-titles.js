@@ -7,9 +7,16 @@ export function initCinematicTitles() {
     const titles = document.querySelectorAll('.hero-title, .section-title');
 
     titles.forEach(title => {
-        const originalText = title.textContent.trim();
+        const hasTypedText = !!title.querySelector('.typed-text');
+        const targetElement = hasTypedText ? title.querySelector('.title-name') : title;
+
+        if (!targetElement) {
+            return;
+        }
+
+        const originalText = targetElement.textContent.trim();
         const words = originalText.split(' ');
-        title.innerHTML = '';
+        targetElement.innerHTML = '';
 
         words.forEach((word, wordIndex) => {
             const wordSpan = document.createElement('span');
@@ -25,9 +32,9 @@ export function initCinematicTitles() {
                 wordSpan.appendChild(charSpan);
             });
 
-            title.appendChild(wordSpan);
+            targetElement.appendChild(wordSpan);
             if (wordIndex < words.length - 1) {
-                title.appendChild(document.createTextNode(' '));
+                targetElement.appendChild(document.createTextNode(' '));
             }
         });
 

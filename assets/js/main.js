@@ -627,8 +627,7 @@ class PerformanceOptimizer {
 
   preloadCriticalResources() {
     const criticalResources = [
-      "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap",
-      "https://unicons.iconscout.com/release/v4.0.8/css/line.css",
+      "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     ];
 
     criticalResources.forEach((resource) => {
